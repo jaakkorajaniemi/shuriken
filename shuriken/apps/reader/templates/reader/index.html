@@ -1,6 +1,62 @@
 {% extends 'templates/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block body %}
-Hello world from book reader!
+<div class="container marketing">
+
+    <hr class="featurette-divider-blank">
+
+    <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="{% static 'img/book.png' %}" class="img-responsive" alt="" width="70" height="70">
+                    <h2>{% trans 'Download PDF' %}</h2>
+                    <p>{% trans 'This book makes a deep dive into the history, structure, culture and market entry patterns of the Japanese startup ecosystem. The book is available free of charge.' %}</p>
+                    <p>
+                        <a class="btn btn-secondary" href="/book" role="button">{% trans 'Read' %} &raquo;</a>
+                </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="{% static 'img/resources.png' %}" class="img-responsive" alt="" width="70" height="70">
+                    <h2>{% trans 'Browse online' %}</h2>
+                    <p>{% trans 'Additional resources for the book, including summary slides, cultural tools, market entry tools and past market entry case studies.' %}</p>
+                    <p>
+                        <a class="btn btn-secondary" href="/resources" role="button">{% trans 'Browse' %} &raquo;</a>
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="{% static 'img/blog.png' %}" class="img-responsive" alt="" width="70" height="70">
+                    <h2>{% trans 'Purchase hardcopy' %}</h2>
+                    <p>{% trans 'My personal blog about Japanese startup ecosystem, the related business culture, foreign market entry patterns, and other concurrent topics on startups.' %}</p>
+                    <p><a class="btn btn-secondary" href="/blog" role="button">{% trans 'Read' %} &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            {% if chapters %}
+                {% for chapter in chapters %}
+                <div class="row featurette">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                                <h2 class="featurette-heading">{{ chapter.data.title }}</h2>
+                                <p class="lead">{{ chapter.data.description }}</p>
+                                <p>Chapter parent: {{ chapter.parent.data.title }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endif %}
+
+            <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
 {% endblock %}

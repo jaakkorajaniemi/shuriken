@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'shuriken.apps.core',
     'shuriken.apps.blog',
     'shuriken.apps.reader',
+    'shuriken.apps.resources',
 ]
 
 MIDDLEWARE = [

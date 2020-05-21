@@ -24,5 +24,6 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path('', include('shuriken.apps.core.urls')),
     path('blog/', include('shuriken.apps.blog.urls')),
+    path('resources/', include('shuriken.apps.resources.urls')),
     path('book/', include('shuriken.apps.reader.urls')),
 prefix_default_language=True)

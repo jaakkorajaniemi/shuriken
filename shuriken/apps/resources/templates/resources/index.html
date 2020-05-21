@@ -1,0 +1,36 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+<div class="container marketing">
+
+    <hr class="featurette-divider-blank">
+    
+    <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg">
+                    <ul>
+                        <lh>News feed</lh>
+                        {% if articles %}
+                                {% for article in articles %}
+                                <li><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></li>
+                                {% endfor %}
+                        {% else %}
+                            <li>
+                                <strong>There are no categories present.</strong>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </p>
+                </div><!-- /.col-lg-4 -->
+
+
+    <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+{% endblock %}

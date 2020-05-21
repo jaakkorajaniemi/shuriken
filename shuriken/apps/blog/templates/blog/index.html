@@ -1,6 +1,37 @@
 {% extends 'templates/base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block body %}
-Hello world from blog!
+<div class="container marketing">
+
+    <hr class="featurette-divider-blank">
+
+    <!-- Three columns of text below the carousel -->
+
+    <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            {% if posts %}
+                {% for post in posts %}
+                <div class="row featurette">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg">
+                            <h2 class="featurette-heading">{{ post.title }}</h2>
+                                <p class="lead">{{ post.description }}</p>
+                                <p>{{ post.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endif %}
+
+            <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
 {% endblock %}
