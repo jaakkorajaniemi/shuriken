@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-19 23:53+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\shuriken\apps\core\templates\core\index.html:11 .\templates\base.html:53
+msgid "Book"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:12
+msgid ""
+"This book makes a deep dive into the history, structure, culture and market "
+"entry patterns of the Japanese startup ecosystem. The book is available free "
+"of charge."
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:14
+#: .\shuriken\apps\core\templates\core\index.html:29
+msgid "Read"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:19 .\templates\base.html:56
+msgid "Resources"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:20
+msgid ""
+"Additional resources for the book, including summary slides, cultural tools, "
+"market entry tools and past market entry case studies."
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:22
+msgid "Browse"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:27 .\templates\base.html:59
+msgid "Blog"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:28
+msgid ""
+"My personal blog about Japanese startup ecosystem, the related business "
+"culture, foreign market entry patterns, and other concurrent topics on "
+"startups."
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:42
+msgid "Professional experience"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:94
+msgid "Technical abilities"
+msgstr ""
+
+#: .\templates\base.html:11
+msgid "seo_description"
+msgstr ""
+
+#: .\templates\base.html:50
+msgid "Home"
+msgstr ""
+
+#: .\templates\base.html:70
+msgid "Login"
+msgstr ""
+
+#: .\templates\base.html:88
+msgid "Request a meeting"
+msgstr ""
+
+#: .\templates\base.html:104
+msgid "Back to top"
+msgstr ""

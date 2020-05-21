@@ -1,0 +1,156 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Fonts */
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/CustomFont.eot");
+  src: url("../fonts/CustomFont.woff") format("woff"),
+  url("../fonts/CustomFont.otf") format("opentype"),
+  url("../fonts/CustomFont.svg#filename") format("svg");
+}
+
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+
+  .book li {
+    text-align: left;
+  }
+  
+  .book li.l1 {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .book li.l2 {
+    margin-left: 1rem;
+  }
+
+  .book li.l3 {
+    margin-left: 2rem;
+  }
+
+  .book li.l4 {
+    margin-left: 3rem;
+  }
+
+  .navbar {
+    font-family: "Oxygen", "Kosugi Maru" !important;
+    font-size: 1.0rem;
+  }
+
+  .nav-link {
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 2rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 1rem;
+    z-index: 10;
+  }
+
+  .carousel-caption p {
+    width: 300px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption p.lead {
+    padding-bottom: 2rem;
+    font-family: "Brawler" !important;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 25rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 25rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  .featurette-divider-blank {
+    margin: 1rem 0;
+    border-color: transparent;
+  }
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .carousel-caption .small {
+      font-size: 0.85rem;
+    }
+
+    .carousel-caption .japanese {
+        font-size: 0.8rem;
+        height: 13.3rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.5rem;
+        writing-mode: vertical-rl;
+    }
+  
+    .featurette-heading {
+      font-size: 35px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+    }
+  }
+

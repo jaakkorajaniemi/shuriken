@@ -1,0 +1,162 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+<div class="container marketing">
+
+    <hr class="featurette-divider-blank">
+
+    <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="{% static 'img/book.png' %}" class="img-responsive" alt="" width="70" height="70">
+                    <h2>{% trans 'Book' %}</h2>
+                    <p>{% trans 'This book makes a deep dive into the history, structure, culture and market entry patterns of the Japanese startup ecosystem. The book is available free of charge.' %}</p>
+                    <p>
+                        <a class="btn btn-secondary" href="/book" role="button">{% trans 'Read' %} &raquo;</a>
+                </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="{% static 'img/resources.png' %}" class="img-responsive" alt="" width="70" height="70">
+                    <h2>{% trans 'Resources' %}</h2>
+                    <p>{% trans 'Additional resources for the book, including summary slides, cultural tools, market entry tools and past market entry case studies.' %}</p>
+                    <p>
+                        <a class="btn btn-secondary" href="/resources" role="button">{% trans 'Browse' %} &raquo;</a>
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="{% static 'img/blog.png' %}" class="img-responsive" alt="" width="70" height="70">
+                    <h2>{% trans 'Blog' %}</h2>
+                    <p>{% trans 'My personal blog about Japanese startup ecosystem, the related business culture, foreign market entry patterns, and other concurrent topics on startups.' %}</p>
+                    <p><a class="btn btn-secondary" href="/blog" role="button">{% trans 'Read' %} &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                        <h2 class="featurette-heading">{% trans 'Professional experience' %}</h2>
+                            <p class="lead">Jaakko Rajaniemi is an active XXX and YYY of Deloitte Tohmatsu Venture Support, and a ZZZ. He is also an active member of the Finnish Chamber of Commerce. Before joining Deloitte, he organized Slush Tokyo, Tech in Asia and Creative Business Cup Japan. At Deloitte, I have been actively involved in innovation projects sponsored by the Ministry of Economy, Trade and Industry, Tokyo Metropolitan Government, and Fortune 500 companies in mobility, real estate, forestry, retail, AI, IoT and software.</p>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider-blank">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p>Global innovation co-creation advisory</p>
+                            <ul>
+                                <li>Business needs analysis, startup sourcing, due diligence</li>
+                                <li>Strategic partnerships, proof-of-concepts, local prototyping and new business co-creation</li>
+                                <li>Project management, market entry management, meeting facilitation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p>Japan market entry advisory</p>
+                            <ul>
+                                <li>Business matching event planning and execution</li>
+                                <li>Startup pitch event planning and execution</li>
+                                <li>Policy advisory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p>Startup growth advisory</p>
+                            <ul>
+                                <li>Market evaluation, risk identification, go-to-market plan formulation</li>
+                                <li>Strategic partnerships, proof-of-concepts, local prototyping and new business co-creation</li>
+                                <li>Project management, market entry management, meeting facilitation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <h2 class="featurette-heading">{% trans 'Technical abilities' %}</span></h2>
+                            <p class="lead">Startup Consultant, Deloitte Tohmatsu Venture Support</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p class="lead">Startup and innovation management</p>
+                            <ul>
+                                <li>Practical experience of the startup lifecycle: ideating, prototyping, partnering, fundraising and scaling.</li>
+                                <li>Experience of frameworks such as needs analysis, lean canvas, design thinking, and facilitation tools.</li>
+                                <li>Experience of business administration and stakeholder management in complex co-creation projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p class="lead">Project management</p>
+                            <ul>
+                                <li>Practical and international experience of the <a href="#">PMP™</a> core knowledge areas of project management.</li>
+                                <li>Experience of agile development methods such as <a href="#">Scrum</a> and <a href="#">Kanban</a>.</li>
+                                <li>Project management tools such as <a href="#">Backlog</a>, <a href="#">Trello</a>, <a href="#">Jira</a>, <a href="#">Astana</a>, and <a href="#">Slack</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p class="lead">Intercultural management</p>
+                            <ul>
+                                <li>Practical and theoretical experience of cultural tools such as <a href="#">Hofstede</a>, <a href="#">Hall</a>, and <a href="#">Meyer</a>.</li>
+                                <li>Master of International Business with seven years of experience in Japanese business culture.</li>
+                                <li>Business proficiency in Japanese (<a href="#">JLPT N1</a>) with native proficiency in English and Finnish.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <svg class="bd-placeholder-img rounded-circle" width="100" height="100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 100x100"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">100x100</text></svg>
+                        </div>
+                        <div class="col-lg">
+                            <p class="lead">Software development</p>
+                            <ul>
+                                <li>Practical experience in Python, PHP, Django, Symfony, jQuery, React, Bootstrap, MySQL, C++ and Lua.</li>
+                                <li>Basic understanding of related tools such as npm, Git, SVN, CVS, Jira, TestFlight, Firebase, etc.</li>
+                                <li>This website was self-made using Python, Django, React and Bootstrap and <a href="#">is available on Github.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+{% endblock %}
