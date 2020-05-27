@@ -26,6 +26,7 @@
             </div>
         </div>
     </div>
+    <a name="top"></a>
 </div>
 {% endblock %}
 
@@ -36,7 +37,6 @@
     <!-- Three columns of text below the carousel -->
 
     <!-- START THE FEATURETTES -->
-
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3">
@@ -44,26 +44,20 @@
                         <div class="container">
                             <div class="row my-3">
                                 <div class="col-md p-3 shadow rounded" style="font-size: 0.9rem">
-                                    <h2>{% trans 'Timeline' %}</h2>
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
+                                    {% if book %}
+                                        {% for chapter in book.tree %}
+                                            <h2>{{ chapter.0.data.title }}</h2>
 
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
-                                    
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
-                                    
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
+                                            {% for schapter in chapter.1 %}
+                                            <div><p style="text-indent: 0rem"><a href="/book/chapter/{{ schapter.0.data.slug }}#top" target="">{{ forloop.parentloop.counter }}.{{ forloop.counter }} {{ schapter.0.data.title }}</a></p></div>
+
+                                                {% for sschapter in schapter.1 %}
+                                                    <div><p style="text-indent: 1rem"><a href="/book/chapter/{{ schapter.0.data.slug }}#top" target="">{{ forloop.parentloop.parentloop.counter }}.{{ forloop.parentloop.counter }}.{{ forloop.counter }} {{ sschapter.0.data.title }}</a></p></div>
+                                                {% endfor %}
+
+                                            {% endfor %}
+                                        {% endfor %}
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
@@ -75,13 +69,24 @@
                                 <div class="col-lg shadow rounded">
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-lg-1 p-0 py-4" style="font-size: 0.9rem; text-align: center">
-                                                <span>2019</span><br />
-                                                <span>Nov</span><br />
-                                                <span>11</span><br />
+                                            <div class="col-lg-1 p-0" style="font-size: 0.9rem; text-align: center">
+                                                <div class="py-4">
+                                                    <span>2019</span><br />
+                                                    <span>Nov</span><br />
+                                                    <span>11</span><br />
+                                                </div>
+                                                <div class="py-1">
+                                                    <i class="fa fa-facebook-official" style="color: #33a; font-size: 1.5rem;"></i>
+                                                </div>
+                                                <div class="py-1">
+                                                    <i class="fa fa-linkedin-square" style="color: #47e; font-size: 1.5rem;"></i>
+                                                </div>
+                                                <div class="py-1">
+                                                    <i class="fa fa-envelope" style="color: #333; font-size: 1.5rem;"></i>
+                                                </div>
                                             </div>
                                             <div class="col-lg-11 p-3">
-                                                <h2 class="featurette-heading">Lorem ipsum dolor sit amet.</h2>
+                                                <h2 class="featurette-heading">The Muromachi Period (1576 - 1603)</h2>
                                                 <p class="lead" style="color: purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sodales lectus, sit amet volutpat orci elementum eu.</p>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sodales lectus, sit amet volutpat orci elementum eu. Vivamus auctor ipsum vitae leo consectetur, non consectetur leo porta. Etiam eget tempor sapien. Pellentesque finibus euismod nibh, nec vestibulum magna elementum molestie. Praesent consectetur purus nibh, ac bibendum ex malesuada sed. Proin tortor ante, ultrices eu felis vitae, blandit auctor neque. Morbi lacinia egestas libero quis pharetra. Fusce at ullamcorper nulla.
                                                 </p><p>Nam congue consequat pharetra. Proin tempus purus a nulla pellentesque, eget fermentum eros mollis. Praesent vel consectetur ante. Aliquam massa odio, fringilla sed luctus sed, rhoncus viverra diam. Quisque tincidunt, magna a porttitor mattis, arcu neque condimentum diam, tincidunt aliquet purus ligula ac mi. Ut eu neque iaculis, condimentum ante sed, malesuada neque. Praesent ut mattis magna. Aliquam tempor mattis velit vitae aliquet. Aenean massa sem, commodo eget eleifend quis, sagittis non sem. Maecenas ut mattis arcu, eget lacinia justo. Etiam suscipit leo nec leo lobortis suscipit. Aliquam faucibus mi id mi ultricies, eget dictum turpis sagittis. Curabitur placerat purus id mauris condimentum vulputate. Fusce rhoncus ac tortor eget condimentum. Vivamus fringilla at nunc sit amet auctor. In ultrices convallis risus sed varius.
@@ -115,17 +120,6 @@
                                    </div>
                                 </div>
                             </div>
-                        {% if posts %}
-                            {% for post in posts %}
-                            <div class="row my-3">
-                                <div class="col-lg p-3 shadow rounded">
-                                    <h2 class="featurette-heading">{{ post.title }}</h2>
-                                    <p class="lead">{{ post.description }}</p>
-                                    <p>{{ post.content }}</p>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        {% endif %}
                         </div>
                     </div>
                 </div>

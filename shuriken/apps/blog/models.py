@@ -2,7 +2,7 @@ from django.db import models
 
 class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Published at', null=False)
-    updated_at = models.DateTimeField(auto_now=True, verbose_name='Modified at', null=False)
+    updated_at = models.DateTimeField(auto_now_add=True, verbose_name='Modified at', null=False)
     accessed = models.IntegerField(default=0, null=False)
     title = models.CharField(default='', max_length=256, null=False)
     content = models.TextField(default='', null=False)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-19 23:53+0900\n"
+"POT-Creation-Date: 2020-05-22 22:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,71 +17,225 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\shuriken\apps\core\templates\core\index.html:11 .\templates\base.html:53
+#: .\shuriken\apps\core\templates\core\index.html:14 .\templates\base.html:56
 msgid "Book"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:12
+#: .\shuriken\apps\core\templates\core\index.html:15
+#: .\shuriken\apps\reader\templates\reader\index.html:15
 msgid ""
 "This book makes a deep dive into the history, structure, culture and market "
 "entry patterns of the Japanese startup ecosystem. The book is available free "
 "of charge."
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:14
-#: .\shuriken\apps\core\templates\core\index.html:29
+#: .\shuriken\apps\core\templates\core\index.html:17
+#: .\shuriken\apps\core\templates\core\index.html:32
+#: .\shuriken\apps\reader\templates\reader\index.html:17
+#: .\shuriken\apps\reader\templates\reader\index.html:32
 msgid "Read"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:19 .\templates\base.html:56
+#: .\shuriken\apps\core\templates\core\index.html:22 .\templates\base.html:59
 msgid "Resources"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:20
+#: .\shuriken\apps\core\templates\core\index.html:23
+#: .\shuriken\apps\reader\templates\reader\index.html:23
 msgid ""
 "Additional resources for the book, including summary slides, cultural tools, "
 "market entry tools and past market entry case studies."
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:22
+#: .\shuriken\apps\core\templates\core\index.html:25
+#: .\shuriken\apps\reader\templates\reader\index.html:25
 msgid "Browse"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:27 .\templates\base.html:59
+#: .\shuriken\apps\core\templates\core\index.html:30 .\templates\base.html:62
 msgid "Blog"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:28
+#: .\shuriken\apps\core\templates\core\index.html:31
+#: .\shuriken\apps\reader\templates\reader\index.html:31
 msgid ""
 "My personal blog about Japanese startup ecosystem, the related business "
 "culture, foreign market entry patterns, and other concurrent topics on "
 "startups."
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:42
+#: .\shuriken\apps\core\templates\core\index.html:45
 msgid "Professional experience"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:94
+#: .\shuriken\apps\core\templates\core\index.html:47
+msgid "professional_bio"
+msgstr ""
+"Jaakko is a global innovation consultant at Deloitte Tohmatsu Venture "
+"Support, advising Fortune 500 companies on co-innovation with startups, "
+"managing and mentoring startup initiatives sponsored by METI and Tokyo "
+"Metropolitan Government, and supporting individual startups with Japan "
+"market entry. Born in Finland in 1990, he is also a Master of International "
+"Business (Rikkyo University), B.Sc. in Economics and Business Administration "
+"(Turku University), a Project Management Professional (PMP)&reg;, and an "
+"active member of the Finnish Chamber of Commerce in Japan."
+
+#: .\shuriken\apps\core\templates\core\index.html:58
+msgid "Co-innovation advisory"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:60
+msgid "cocreation_desc_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:61
+msgid "cocreation_desc_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:62
+msgid "cocreation_desc_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:71
+msgid "Market entry advisory"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:73
+msgid "entry_desc_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:74
+msgid "entry_desc_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:75
+msgid "entry_desc_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:84
+msgid "Startup growth advisory"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:86
+msgid "startup_desc_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:87
+msgid "startup_desc_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:88
+msgid "startup_desc_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:101
 msgid "Technical abilities"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:112
+msgid "Innovation management"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:118
+msgid "skills_startups_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:119
+msgid "skills_startups_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:120
+msgid "skills_startups_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:121
+msgid "skills_startups_four"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:133
+msgid "Project management"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:139
+msgid "skills_project_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:140
+msgid "skills_project_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:141
+msgid "skills_project_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:142
+msgid "skills_project_four"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:156
+msgid "Intercultural management"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:162
+msgid "skills_culture_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:163
+msgid "skills_culture_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:164
+msgid "skills_culture_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:165
+msgid "skills_culture_four"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:177
+msgid "Software development"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:183
+msgid "skills_software_one"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:184
+msgid "skills_software_two"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:185
+msgid "skills_software_three"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:186
+msgid "skills_software_four"
+msgstr ""
+
+#: .\shuriken\apps\reader\templates\reader\index.html:14
+msgid "Download PDF"
+msgstr ""
+
+#: .\shuriken\apps\reader\templates\reader\index.html:22
+msgid "Browse online"
+msgstr ""
+
+#: .\shuriken\apps\reader\templates\reader\index.html:30
+msgid "Purchase hardcopy"
 msgstr ""
 
 #: .\templates\base.html:11
 msgid "seo_description"
 msgstr ""
 
-#: .\templates\base.html:50
+#: .\templates\base.html:53
 msgid "Home"
 msgstr ""
 
-#: .\templates\base.html:70
-msgid "Login"
-msgstr ""
-
-#: .\templates\base.html:88
+#: .\templates\base.html:92
 msgid "Request a meeting"
 msgstr ""
 
-#: .\templates\base.html:104
+#: .\templates\base.html:108
 msgid "Back to top"
 msgstr ""
