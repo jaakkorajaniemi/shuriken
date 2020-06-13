@@ -3,26 +3,35 @@
 {% load i18n %}
 
 {% block banner %}
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
+<div id="sh-section-header" class="slide" data-ride="carousel">
+    <div class="inner">
+        <div class="item active">
+
             <img src="{% static 'img/banner-specimen-9.png' %}" class="img-responsive" alt="">
-            <div class="container" id="particles-js">
-                <div class="carousel-caption text-left">
-                    {% if request.LANGUAGE_CODE == 'ja' %}
-                    <p lang="ja" class="japanese">
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        
-                    </p>
-                    {% elif request.LANGUAGE_CODE == 'en' %}
-                    <p class="lead text-dark">
-                        <span class="align-bottom">Global innovation consultant in the Japanese market. Helping startups and corporations build the best of each other.</span>
-                    </p>
-                    {% endif %}
-                    <a class="btn btn-md btn-info" href="#" role="button">{% trans 'Request a meeting' %} &raquo;</a>
+            <div id="particles-js"></div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 my-5">
+                        {% if request.LANGUAGE_CODE == 'ja' %}
+                        <div class="feature-ja rounded">
+                            <p lang="ja" class="mb-0">私はフィンランドに生まれたが、2017年から東京に住んでいる。</p>
+                            <p lang="ja" class="mb-0">私はフィンランドに生まれたが、2017年から東京に住んでいる。</p>
+                            <p lang="ja" class="mb-0">私はフィンランドに生まれたが、2017年から東京に住んでいる。</p>
+                            <div style="clear: both"></div>
+                        </div> 
+                        {% else %}
+                        <div class="feature rounded">
+                            <p>An open innovation and startup consultant based in Tokyo specialized in startups, global market entry, corporate innovation and public sector innovation advisory.</p>
+                            <p class="mb-0">Born and raised in Helsinki with a strong background in programming and interest in culture, travel and lifestyle.</p>
+                        </div> 
+                        {% endif %}
+                        <a class="btn btn-md btn-info" href="/contact" role="button">{% trans 'Request a meeting' %} &raquo;</a>
+                    </div>
                 </div>
+            </div>
+            
+            <div class="bar"></div>
             </div>
         </div>
     </div>
@@ -30,338 +39,294 @@
 {% endblock %}
 
 {% block body %}
-<div class="container marketing">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 mb-3">
+            <div class="sh-warpbox shadow bg-light rounded">
+                <div class="p-3 mb-2">
+                    <i class="fa fa-envelope fa-3x" style="color: #032"></i>
+                    <h4 class="mt-1">{% trans 'Request a meeting' %}</h4>
+                    <p class="mb-5">Use this button for inquiries. All business inquiries will be handled confidentially.</p>
+                </div>  
+                <div style="position: absolute; bottom: 1rem; width: 100%;">
+                    <button class="btn btn-info" onclick="window.location.href='/contact';" role="button">{% trans 'Request a meeting' %} &raquo;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="sh-warpbox shadow bg-light rounded">
+                <div class="p-3 mb-2">
+                    <i class="fa fa-linkedin-square fa-3x" style="color: #032"></i>
+                    <h4 class="mt-1">{% trans 'LinkedIn' %}</h4>
+                    <p class="mb-5">Use this link to access my LinkedIn profile and send a direct message.</p>
+                </div>
+                <div style="position: absolute; bottom: 1rem; width: 100%;">
+                    <button class="btn btn-info" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';" role="button">{% trans 'Access' %} &raquo;</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+            <div class="sh-warpbox shadow bg-light rounded">
+                <div class="p-3 mb-2">
+                    <i class="fa fa-quote-right fa-3x" style="color: #bbb"></i><!-- #611 for wine -->
+                    <h4 class="mt-1">{% trans 'Blog' %}</h4>
+                    <p class="mb-5">My blog with insights into Japanese business will be published here once coding is done.</p>
+                </div>
+                <div style="position: absolute; bottom: 1rem; width: 100%;">
+                    <button class="btn btn-secondary" role="button" disabled>{% trans 'Read' %} &raquo;</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="warpbox shadow bg-light rounded">
-                        <div class="p-3 mb-2">
-                            <i class="fa fa-book fa-3x" style="color: #032"></i>
-                            <h2>{% trans 'Book' %}</h2>
-                            <p style="margin-bottom: 2.5rem;">{% trans 'This book makes a deep dive into the history, structure, culture and market entry patterns of the Japanese startup ecosystem. The book is available free of charge.' %}</p>
-                        </div>  
-                        <div style="position: absolute; bottom: 1rem; width: 100%;">
-                            <a class="btn btn-info" href="/book" role="button">{% trans 'Read' %} &raquo;</a>
-                        </div>
-                    </div>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="warpbox shadow bg-light rounded">
-                        <div class="p-3 mb-2">
-                            <i class="fa fa-folder-open fa-3x" style="color: #032"></i>
-                            <h2>{% trans 'Resources' %}</h2>
-                            <p style="margin-bottom: 2.5rem;">{% trans 'Additional resources for the book, including summary slides, cultural tools, market entry tools and past market entry case studies.' %}</p>
-                        </div>
-                        <div style="position: absolute; bottom: 1rem; width: 100%;">
-                            <a class="btn btn-info" href="/resources" role="button">{% trans 'Browse' %} &raquo;</a>
-                        </div>
-                    </div>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <div class="warpbox shadow bg-light rounded">
-                        <div class="p-3 mb-2" style="">
-                            <i class="fa fa-quote-right fa-3x" style="color: #611"></i>
-                            <h2>{% trans 'Blog' %}</h2>
-                            <p style="margin-bottom: 2.5rem;">{% trans 'My personal blog about Japanese startup ecosystem, the related business culture, foreign market entry patterns, and other concurrent topics on startups.' %}</p>
-                        </div>
-                        <div style="position: absolute; bottom: 1rem; width: 100%;">
-                            <a class="btn btn-info" href="/blog" role="button">{% trans 'Read' %} &raquo;</a>
-                        </div>
-                    </div>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-
-
+    <hr class="sh-divider">
     <!-- START THE FEATURETTES -->
 
-            <hr class="featurette-divider">
 
-            <div class="row featurette">
-                <div class="container experience">
-                    <div class="row">
-                        <div class="col-lg">
-                        <h2 class="featurette-heading">{% trans 'Professional experience' %}</h2>
-                        <hr class="featurette-divider-blank">
-                            <p class="lead">
-                                {% trans 'professional_bio' %}
-                            </p>
+    <div class="row">
+        <div class="container sh-experience">
+            <div class="row">
+                <div class="col-lg">
+                    <h2 class="featurette-heading">{% trans 'Professional experience' %}</h2>
+                    <p class="light">
+                        I currently work as a Global Innovation Consultant for Deloitte Tohmatsu Venture Support (Tokyo),
+                        where I provide direct startup mentorship, advise Fortune 500 corporations on startup co-innovation,
+                        and provide public sector startup advisory for ministries and local governments. Before Deloitte, I was an 
+                        organizer at Slush Tokyo and Tech in Asia. I am a Certified Associate of Project Management (CAPM)®, 
+                        a member of the Finnish Chamber of Commerce Japan, and business-proficient in English, Japanese and Finnish.
+                    </p>
+                </div>
+            </div>
+            <hr class="sh-divider-blank">
+            <div class="row">
+                <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
+                    <i class="fa fa-globe fa-3x pb-2" style="color: #357"></i>
+                </div>
+                <div class="col-lg my-auto">
+                    <h3>{% trans 'Case examples - Direct startup growth advisory' %}</h3>
+                    <ul>
+                        <li>Operational support and Japan entry PMO for an European startup with over €50 million in total investment.</li>
+                        <li>Mentor for a Japanese consumer app startup in a government-sponsored startup acceleration program.</li>
+                        <li>Provided pitch training for a Japanese manufacturing startup planning to enter the Singaporean market.</li>
+                    </ul>
+                    <div class="rounded mb-4 p-3" style="background-color: #f6f6f6; border: 1px solid #aaa">
+                        <p class="p-0 m-0" style="font-size: 0.8rem;">
+                            The challenge of startup founders is that they have very limited time for other things than sales and growth.
+                            Maneuvering through the <i>valley of death</i>, transforming a loose group of colleagues into an <i>organization</i>,
+                            and entering a new market which operates on different <i>market dynamics</i> are next to impossible to master alone. As a mentor,
+                            I can advise on best practices and fill-in a broad variety of temporary bilingual operational roles, combining state-of-the-art 
+                            techniques such as agile project management, lean startup and general business administration frameworks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
+                    <i class="fa fa-briefcase fa-3x pb-2" style="color: #223"></i>
+                </div>
+                <div class="col-lg my-auto">
+                    <h3>{% trans 'Case examples - Corporate co-innovation advisory' %}</h3>
+                    <ul>
+                        <li>Performed business needs analysis for a corporation and listed 100 startups as collaboration candidates.</li>
+                        <li>Conducted qualitative due diligence on a multi-million venture capital investment in real estate industry.</li>
+                        <li>Provided hands-on negotiation support for co-innovation between a Japanese corporation and a global startup.</li>
+                    </ul>
+                    <div class="rounded mb-4 p-3" style="background-color: #f6f6f6; border: 1px solid #aaa">
+                        <p class="p-0 m-0" style="font-size: 0.8rem;">
+                            Large corporations often have plenty of assets, but no permission to spend resources on exploring
+                            disruptive new ideas, no resources to cope with shortening innovation lifecycle, too slow processes to
+                            allow rapid agile development, and little experience of intercultural teams and global market entry. As
+                            a consultant, I assess the needs and goals of the corporation and provide a framework for startup
+                            collaboration which reduces the likelihood of failure and gives an idea of the best practices to proceed.
+                            I also facilitate ground-level meetings in both English and Japanese.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
+                    <i class="fa fa-seedling fa-3x pb-2" style="color: #055"></i>
+                </div>
+                <div class="col-lg my-auto">
+                    <h3>{% trans 'Case examples - Public sector startup advisory' %}</h3>
+                    <ul>
+                        <li>Invited over 190 global startups to Japan and matched them with over 200 Japanese large corporations.</li>
+                        <li>Conducted foreign startup ecosystem research in the Nordic countries and Russia for a local ministry.</li>
+                        <li>Collaborated with local foreign embassies and the metropolitan government to showcase global startups.</li>
+                    </ul>
+                    <div class="rounded mb-4 p-3" style="background-color: #f6f6f6; border: 1px solid #aaa">
+                        <p class="p-0 m-0" style="font-size: 0.8rem;">
+                            The government wants to increase local ecosystem competitiveness, attract skilled global talent, foster
+                            new innovation, and support the society as a whole while under constant pressure and observation from taxpayers.
+                            Furthermore, the government is constantly developing policies and innovation schemes that work in the local context.
+                            As an advisor, I can support the government both in a policy researcher role and also as an organizer of
+                            specific government innovation and startup initiatives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="sh-divider-blank">
+            <div class="row">
+                <div class="col-lg-3" style="text-align: center">
+                    <figure class="figure my-auto">
+                        <img class="rounded" src="{% static 'img/2018_Ignite.jpg' %}" alt="" width="200" height="200" />
+                        <figcaption class="figure-caption">Slush Tokyo, 2018 (Japan)</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3" style="text-align: center">
+                    <figure class="figure my-auto">
+                        <img class="rounded" src="{% static 'img/2018_Ignite3.jpg' %}" alt="" width="200" height="200" />
+                        <figcaption class="figure-caption">Ignite Manila, 2018 (Philippines)</figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <div class="feature rounded p-3">
+                        <p class="mb-0">My mission is to make the Japanese innovation ecosystem more global and competitive. Currently, most startups and corporations struggle with the information barrier caused by gaps in cultural and linguistic understanding. As a resident of Japan, it is in my utmost interest to help realize a better society to deliver a happier life to all of us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="sh-divider">
+
+    <div class="row featurette">
+        <div class="container sh-experience">
+            <div class="row">
+                <div class="col-lg">
+                    <h2 class="featurette-heading">{% trans 'Education' %}</h2>
+                </div>
+            </div>
+            <hr class="sh-divider-blank">
+            <div class="row">
+                <div class="col-lg-1 my-auto" style="text-align: center">
+                    <i class="fa fa-graduation-cap fa-3x pb-2" style="color: #422"></i>
+                </div>
+                <div class="col-lg my-auto">
+                    <h3>{% trans 'Rikkyo University, Graduate School of Business (Tokyo)' %}</h3>
+                    <ul>
+                        <li>Graduation thesis focused global strategic M&A with DCF, multiples valuations and qualitative due diligence.</li>
+                        <li>Conducted a Japan market entry feasibility study for a Nordic retail startup.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 my-auto" style="text-align: center">
+                    <i class="fa fa-graduation-cap fa-3x pb-2" style="color: #224"></i>
+                </div>
+                <div class="col-lg my-auto">
+                    <h3>{% trans 'University of Turku, School of Economics (Finland)' %}</h3>
+                    <ul>
+                        <li>Graduation thesis focused Japanese business culture and intercultural communication.</li>
+                        <li>Certificates in Japanese language and information systems management in business administration.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="sh-divider">
+
+    <div class="row featurette">
+        <div class="container abilities">
+            <div class="row">
+                <div class="col-lg">
+                    <h2 class="featurette-heading">{% trans 'Technical abilities' %}</span></h2>
+                </div>
+            </div>
+            <hr class="sh-divider-blank">
+            <div class="row">
+                <div class="col-lg-6 my-2">
+                    <div class="shadow rounded bg-secondary">
+                        <div class="row">
+                            <div class="col-lg m-3">
+                                <div style="float: left; width: 4rem"><i class="fa fa-briefcase fa-3x" style="color: #fff"></i></div>
+                                <div style="float: left; font-size: 1.3rem" class="mt-2 text-light">{% trans 'Innovation management' %}</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <ul class="p-0 mx-5 text-light">
+                                    <li>New business needs and strategy analysis</li>
+                                    <li>Startup search and qualitative due diligence</li>
+                                    <li>Market entry and business growth support</li>
+                                    <li>State-of-the-art frameworks and models</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <hr class="featurette-divider-blank">
-                    <div class="row">
-                        <div class="col-lg-1 my-auto">
-                            <i class="fa fa-briefcase fa-3x" style="color: #223"></i>
+                </div>
+
+                <div class="col-lg-6 my-2">
+                    <div class="shadow rounded bg-light">
+                        <div class="row">
+                            <div class="col-lg m-3">
+                                <div style="float: left; width: 4rem"><i class="fa fa-calendar-check fa-3x" style="color: #000"></i></div>
+                                <div style="float: left; font-size: 1.3rem" class="mt-2">{% trans 'Project management' %}</div>
+                            </div>
                         </div>
-                        <div class="col-lg my-auto">
-                            <p>{% trans 'Co-innovation advisory' %}</p>
-                            <ul>
-                                <li>{% trans 'cocreation_desc_one' %}</li>
-                                <li>{% trans 'cocreation_desc_two' %}</li>
-                                <li>{% trans 'cocreation_desc_three' %}</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-1 my-auto">
-                            <i class="fa fa-globe fa-3x" style="color: #357"></i>
-                        </div>
-                        <div class="col-lg my-auto">
-                            <p>{% trans 'Market entry advisory' %}</p>
-                            <ul>
-                                <li>{% trans 'entry_desc_one' %}</li>
-                                <li>{% trans 'entry_desc_two' %}</li>
-                                <li>{% trans 'entry_desc_three' %}</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-1 my-auto">
-                            <i class="fa fa-seedling fa-3x" style="color: #055"></i>
-                        </div>
-                        <div class="col-lg my-auto">
-                            <p>{% trans 'Startup growth advisory' %}</p>
-                            <ul>
-                                <li>{% trans 'startup_desc_one' %}</li>
-                                <li>{% trans 'startup_desc_two' %}</li>
-                                <li>{% trans 'startup_desc_three' %}</li>
-                            </ul>
+                        <div class="row">
+                            <div class="col-lg">
+                                <ul class="p-0 mx-5">
+                                    <li>Experience of both PM and PMO roles</li>
+                                    <li>Managing virtual and multicultural teams</li>
+                                    <li>Waterfall, agile, scrum and kanban styles</li>
+                                    <li>Certified Associate in Project Management®</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="container experience">
-                    <div class="row">
-                        <div class="col-lg">
-                        <h2 class="featurette-heading">{% trans 'Education' %}</h2>
+            <div class="row">
+                <div class="col-lg-6 my-2">
+                    <div class="shadow rounded bg-light">
+                        <div class="row">
+                            <div class="col-lg m-3">
+                                <div style="float: left; width: 4rem"><i class="fa fa-globe fa-3x" style="color: #000"></i></div>
+                                <div style="float: left; font-size: 1.3rem" class="mt-2">{% trans 'Intercultural management' %}</div>
+                            </div>
                         </div>
-                    </div>
-                    <hr class="featurette-divider-blank">
-                    <div class="row">
-                        <div class="col-lg-1 my-auto">
-                            <i class="fa fa-graduation-cap fa-3x" style="color: #422"></i>
-                        </div>
-                        <div class="col-lg my-auto">
-                            <p>{% trans 'Rikkyo University, Graduate School of Business (Tokyo)' %}<br /><i>Master of International Business</i></p>
-                            <ul>
-                                <li>{% trans 'Graduation thesis advised Bridgestone on a strategic global M&A using DCF and multiples valuations' %}</li>
-                                <li>{% trans 'Conducted Japan market entry feasibility studies for global startups' %}</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-1 my-auto">
-                            <i class="fa fa-graduation-cap fa-3x" style="color: #224"></i>
-                        </div>
-                        <div class="col-lg my-auto">
-                            <p>{% trans 'University of Turku, School of Economics (Finland)' %}<br /><i>Bachelor of Science in Economics and Business Administration</i></p>
-                            <ul>
-                                <li>{% trans 'Graduation thesis focused Japanese business culture and business communication' %}</li>
-                                <li>{% trans 'Minor in information systems management and Japanese language' %}</li>
-                            </ul>
+                        <div class="row">
+                            <div class="col-lg">
+                                <ul class="p-0 mx-5">
+                                    <li>Meeting facilitation in English and Japanese</li>
+                                    <li>Lectures about cultural differences</li>
+                                    <li>Tools from Hofstede, Meyer, Hall, and more</li>
+                                    <li>Book about cultural differences (in the works)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="container abilities">
-                    <div class="row">
-                        <div class="col-lg">
-                            <h2 class="featurette-heading">{% trans 'Technical abilities' %}</span></h2>
-                        </div>
-                    </div>
-                    <hr class="featurette-divider-blank">
-                    <div class="row">
-                        <div class="col-lg-6 my-2">
-                            <div class="shadow rounded bg-secondary">
-                                <div class="row">
-                                    <div class="col-lg m-3">
-                                        <div style="float: left; width: 4rem"><i class="fa fa-briefcase fa-3x" style="color: #fff"></i></div>
-                                        <div style="float: left; font-size: 1.3rem" class="mt-2 text-light">{% trans 'Innovation management' %}</div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg">
-                                        <ul class="p-0 mx-5 text-light">
-                                            <li>{% trans 'skills_startups_one' %}</li>
-                                            <li>{% trans 'skills_startups_two' %}</li>
-                                            <li>{% trans 'skills_startups_three' %}</li>
-                                            <li>{% trans 'skills_startups_four' %}</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                <div class="col-lg-6 my-2">
+                    <div class="shadow rounded bg-secondary">
+                        <div class="row">
+                            <div class="col-lg m-3">
+                                <div style="float: left; width: 4rem"><i class="fa fa-database fa-3x" style="color: #fff"></i></div>
+                                <div style="float: left; font-size: 1.3rem" class="mt-2 text-light">{% trans 'Product development' %}</div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 my-2">
-                            <div class="shadow rounded bg-light">
-                                <div class="row">
-                                    <div class="col-lg m-3">
-                                        <div style="float: left; width: 4rem"><i class="fa fa-calendar-check fa-3x" style="color: #000"></i></div>
-                                        <div style="float: left; font-size: 1.3rem" class="mt-2">{% trans 'Project management' %}</div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg">
-                                        <ul class="p-0 mx-5">
-                                            <li>{% trans 'skills_project_one' %}</li>
-                                            <li>{% trans 'skills_project_two' %}</li>
-                                            <li>{% trans 'skills_project_three' %}</li>
-                                            <li>{% trans 'skills_project_four' %}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6 my-2">
-                            <div class="shadow rounded bg-light">
-                                <div class="row">
-                                    <div class="col-lg m-3">
-                                        <div style="float: left; width: 4rem"><i class="fa fa-globe fa-3x" style="color: #000"></i></div>
-                                        <div style="float: left; font-size: 1.3rem" class="mt-2">{% trans 'Intercultural management' %}</div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg">
-                                        <ul class="p-0 mx-5">
-                                            <li>{% trans 'skills_culture_one' %}</li>
-                                            <li>{% trans 'skills_culture_two' %}</li>
-                                            <li>{% trans 'skills_culture_three' %}</li>
-                                            <li>{% trans 'skills_culture_four' %}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 my-2">
-                            <div class="shadow rounded bg-secondary">
-                                <div class="row">
-                                    <div class="col-lg m-3">
-                                        <div style="float: left; width: 4rem"><i class="fa fa-database fa-3x" style="color: #fff"></i></div>
-                                        <div style="float: left; font-size: 1.3rem" class="mt-2 text-light">{% trans 'Software development' %}</div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg">
-                                        <ul class="p-0 mx-5 text-light">
-                                            <li>{% trans 'skills_software_one' %}</li>
-                                            <li>{% trans 'skills_software_two' %}</li>
-                                            <li>{% trans 'skills_software_three' %}</li>
-                                            <li>{% trans 'skills_software_four' %}</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <ul class="p-0 mx-5 text-light">
+                                    <li>Market research and consumer research</li>
+                                    <li>Product customer journey development</li>
+                                    <li>Experience of Python, Django, PHP, Symfony, C++</li>
+                                    <li>Developed this website (available on github)</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="container experience">
-                    <div class="row">
-                        <div class="col-lg">
-                        <h2 class="featurette-heading">{% trans 'Languages' %}</h2>
-                        </div>
-                    </div>
-                    <hr class="featurette-divider-blank">
-                    <div class="row">
-                        <div class="col-lg-2 my-auto">
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <strong>Reading</strong>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <strong>Writing</strong>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <strong>Listening</strong>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <strong>Speaking</strong>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 my-auto">
-                            <img src="{% static 'img/book.png' %}" class="img-responsive" alt="" width="70" height="70">
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>{% trans 'English' %}</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 my-auto">
-                            <img src="{% static 'img/book.png' %}" class="img-responsive" alt="" width="70" height="70">
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>{% trans 'Japanese' %}</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 my-auto">
-                            <img src="{% static 'img/book.png' %}" class="img-responsive" alt="" width="70" height="70">
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>{% trans 'Finnish' %}</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                        <div class="col-lg-2 my-auto">
-                            <p>★★★★★</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
+        </div>
+    </div>
+    <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
-        </div><!-- /.container -->
+</div><!-- /.container -->
 {% endblock %}

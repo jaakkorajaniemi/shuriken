@@ -1,0 +1,6 @@
+exclusions/*
+**/__pycache__/*
+**/migrations/*
+**/img/*
+*.pptx
+*.xlsx

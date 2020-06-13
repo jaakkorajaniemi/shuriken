@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-22 22:49+0900\n"
+"POT-Creation-Date: 2020-05-29 20:30+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,58 +17,68 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\shuriken\apps\core\templates\core\index.html:14 .\templates\base.html:56
+#: .\shuriken\apps\blog\templates\blog\index.html:24
+#: .\shuriken\apps\core\templates\core\index.html:24
+#: .\shuriken\apps\reader\templates\reader\index.html:24
+#: .\shuriken\apps\reader\templates\reader\reader.html:24
+#: .\templates\base.html:103
+msgid "Request a meeting"
+msgstr ""
+
+#: .\shuriken\apps\blog\templates\blog\index.html:47
+msgid "Timeline"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:41 .\templates\base.html:57
 msgid "Book"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:15
-#: .\shuriken\apps\reader\templates\reader\index.html:15
+#: .\shuriken\apps\core\templates\core\index.html:42
+#: .\shuriken\apps\reader\templates\reader\index.html:42
 msgid ""
 "This book makes a deep dive into the history, structure, culture and market "
 "entry patterns of the Japanese startup ecosystem. The book is available free "
 "of charge."
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:17
-#: .\shuriken\apps\core\templates\core\index.html:32
-#: .\shuriken\apps\reader\templates\reader\index.html:17
-#: .\shuriken\apps\reader\templates\reader\index.html:32
+#: .\shuriken\apps\core\templates\core\index.html:45
+#: .\shuriken\apps\core\templates\core\index.html:69
+#: .\shuriken\apps\reader\templates\reader\index.html:45
 msgid "Read"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:22 .\templates\base.html:59
+#: .\shuriken\apps\core\templates\core\index.html:53 .\templates\base.html:60
 msgid "Resources"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:23
-#: .\shuriken\apps\reader\templates\reader\index.html:23
+#: .\shuriken\apps\core\templates\core\index.html:54
+#: .\shuriken\apps\reader\templates\reader\index.html:54
 msgid ""
 "Additional resources for the book, including summary slides, cultural tools, "
 "market entry tools and past market entry case studies."
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:25
-#: .\shuriken\apps\reader\templates\reader\index.html:25
+#: .\shuriken\apps\core\templates\core\index.html:57
 msgid "Browse"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:30 .\templates\base.html:62
+#: .\shuriken\apps\core\templates\core\index.html:65 .\templates\base.html:63
 msgid "Blog"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:31
-#: .\shuriken\apps\reader\templates\reader\index.html:31
+#: .\shuriken\apps\core\templates\core\index.html:66
+#: .\shuriken\apps\reader\templates\reader\index.html:66
 msgid ""
 "My personal blog about Japanese startup ecosystem, the related business "
 "culture, foreign market entry patterns, and other concurrent topics on "
 "startups."
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:45
+#: .\shuriken\apps\core\templates\core\index.html:84
 msgid "Professional experience"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:47
+#: .\shuriken\apps\core\templates\core\index.html:87
 msgid "professional_bio"
 msgstr ""
 "Jaakko is a global innovation consultant at Deloitte Tohmatsu Venture "
@@ -80,162 +90,247 @@ msgstr ""
 "(Turku University), a Project Management Professional (PMP)&reg;, and an "
 "active member of the Finnish Chamber of Commerce in Japan."
 
-#: .\shuriken\apps\core\templates\core\index.html:58
+#: .\shuriken\apps\core\templates\core\index.html:97
 msgid "Co-innovation advisory"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:60
+#: .\shuriken\apps\core\templates\core\index.html:99
 msgid "cocreation_desc_one"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
-#: .\shuriken\apps\core\templates\core\index.html:61
+#: .\shuriken\apps\core\templates\core\index.html:100
 msgid "cocreation_desc_two"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
-#: .\shuriken\apps\core\templates\core\index.html:62
+#: .\shuriken\apps\core\templates\core\index.html:101
 msgid "cocreation_desc_three"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
-#: .\shuriken\apps\core\templates\core\index.html:71
+#: .\shuriken\apps\core\templates\core\index.html:108
+msgid "professional_bio_example_1"
+msgstr ""
+"Jaakko is a global innovation consultant at Deloitte Tohmatsu Venture "
+"Support, advising Fortune 500 companies on co-innovation with startups, "
+"managing and mentoring startup initiatives sponsored by METI and Tokyo "
+"Metropolitan Government, and supporting individual startups with Japan "
+"market entry. Born in Finland in 1990, he is also a Master of International "
+"Business (Rikkyo University), B.Sc. in Economics and Business Administration "
+"(Turku University), a Project Management Professional (PMP)&reg;, and an "
+"active member of the Finnish Chamber of Commerce in Japan."
+
+#: .\shuriken\apps\core\templates\core\index.html:117
 msgid "Market entry advisory"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:73
+#: .\shuriken\apps\core\templates\core\index.html:119
 msgid "entry_desc_one"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
-#: .\shuriken\apps\core\templates\core\index.html:74
+#: .\shuriken\apps\core\templates\core\index.html:120
 msgid "entry_desc_two"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
-#: .\shuriken\apps\core\templates\core\index.html:75
+#: .\shuriken\apps\core\templates\core\index.html:121
 msgid "entry_desc_three"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
-#: .\shuriken\apps\core\templates\core\index.html:84
+#: .\shuriken\apps\core\templates\core\index.html:128
+msgid "professional_bio_example_2"
+msgstr ""
+"Jaakko is a global innovation consultant at Deloitte Tohmatsu Venture "
+"Support, advising Fortune 500 companies on co-innovation with startups, "
+"managing and mentoring startup initiatives sponsored by METI and Tokyo "
+"Metropolitan Government, and supporting individual startups with Japan "
+"market entry. Born in Finland in 1990, he is also a Master of International "
+"Business (Rikkyo University), B.Sc. in Economics and Business Administration "
+"(Turku University), a Project Management Professional (PMP)&reg;, and an "
+"active member of the Finnish Chamber of Commerce in Japan."
+
+#: .\shuriken\apps\core\templates\core\index.html:137
 msgid "Startup growth advisory"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:86
-msgid "startup_desc_one"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:87
-msgid "startup_desc_two"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:88
-msgid "startup_desc_three"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:101
-msgid "Technical abilities"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:112
-msgid "Innovation management"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:118
-msgid "skills_startups_one"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:119
-msgid "skills_startups_two"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:120
-msgid "skills_startups_three"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:121
-msgid "skills_startups_four"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:133
-msgid "Project management"
-msgstr ""
-
 #: .\shuriken\apps\core\templates\core\index.html:139
-msgid "skills_project_one"
-msgstr ""
+msgid "startup_desc_one"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
 #: .\shuriken\apps\core\templates\core\index.html:140
-msgid "skills_project_two"
-msgstr ""
+msgid "startup_desc_two"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
 
 #: .\shuriken\apps\core\templates\core\index.html:141
-msgid "skills_project_three"
+msgid "startup_desc_three"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum quis tortor et posuere. Pelle is sagittis."
+
+#: .\shuriken\apps\core\templates\core\index.html:148
+msgid "professional_bio_example_3"
+msgstr ""
+"Jaakko is a global innovation consultant at Deloitte Tohmatsu Venture "
+"Support, advising Fortune 500 companies on co-innovation with startups, "
+"managing and mentoring startup initiatives sponsored by METI and Tokyo "
+"Metropolitan Government, and supporting individual startups with Japan "
+"market entry. Born in Finland in 1990, he is also a Master of International "
+"Business (Rikkyo University), B.Sc. in Economics and Business Administration "
+"(Turku University), a Project Management Professional (PMP)&reg;, and an "
+"active member of the Finnish Chamber of Commerce in Japan."
+
+#: .\shuriken\apps\core\templates\core\index.html:161
+msgid "Education"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:142
-msgid "skills_project_four"
+#: .\shuriken\apps\core\templates\core\index.html:170
+msgid "Rikkyo University, Graduate School of Business (Tokyo)"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:156
-msgid "Intercultural management"
+#: .\shuriken\apps\core\templates\core\index.html:170
+msgid "Master of International Business"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:162
-msgid "skills_culture_one"
+#: .\shuriken\apps\core\templates\core\index.html:172
+msgid ""
+"Graduation thesis advised Bridgestone on a strategic global M&A using DCF "
+"and multiples valuations"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:163
-msgid "skills_culture_two"
+#: .\shuriken\apps\core\templates\core\index.html:173
+msgid "Conducted Japan market entry feasibility studies for global startups"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:164
-msgid "skills_culture_three"
+#: .\shuriken\apps\core\templates\core\index.html:182
+msgid "University of Turku, School of Economics (Finland)"
 msgstr ""
 
-#: .\shuriken\apps\core\templates\core\index.html:165
-msgid "skills_culture_four"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:177
-msgid "Software development"
-msgstr ""
-
-#: .\shuriken\apps\core\templates\core\index.html:183
-msgid "skills_software_one"
+#: .\shuriken\apps\core\templates\core\index.html:182
+msgid "Bachelor of Science in Economics and Business Administration"
 msgstr ""
 
 #: .\shuriken\apps\core\templates\core\index.html:184
-msgid "skills_software_two"
+msgid ""
+"Graduation thesis focused Japanese business culture and business "
+"communication"
 msgstr ""
 
 #: .\shuriken\apps\core\templates\core\index.html:185
+msgid "Minor in information systems management and Japanese language"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:198
+msgid "Technical abilities"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:208
+msgid "Innovation management"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:214
+msgid "skills_startups_one"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:215
+msgid "skills_startups_two"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:216
+msgid "skills_startups_three"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:217
+msgid "skills_startups_four"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:229
+msgid "Project management"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:235
+msgid "skills_project_one"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:236
+msgid "skills_project_two"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:237
+msgid "skills_project_three"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:238
+msgid "skills_project_four"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:252
+msgid "Intercultural management"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:258
+msgid "skills_culture_one"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:259
+msgid "skills_culture_two"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:260
+msgid "skills_culture_three"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:261
+msgid "skills_culture_four"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:273
+msgid "Software development"
+msgstr ""
+
+#: .\shuriken\apps\core\templates\core\index.html:279
+msgid "skills_software_one"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:280
+msgid "skills_software_two"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:281
 msgid "skills_software_three"
-msgstr ""
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
 
-#: .\shuriken\apps\core\templates\core\index.html:186
+#: .\shuriken\apps\core\templates\core\index.html:282
 msgid "skills_software_four"
+msgstr "Lorem ipsum dolor sit amet, consectetur at."
+
+#: .\shuriken\apps\core\templates\core\index.html:298
+msgid "Languages"
 msgstr ""
 
-#: .\shuriken\apps\reader\templates\reader\index.html:14
-msgid "Download PDF"
+#: .\shuriken\apps\reader\templates\reader\index.html:41
+msgid "Read online"
 msgstr ""
 
-#: .\shuriken\apps\reader\templates\reader\index.html:22
-msgid "Browse online"
+#: .\shuriken\apps\reader\templates\reader\index.html:53
+#: .\shuriken\apps\reader\templates\reader\index.html:57
+msgid "Download"
 msgstr ""
 
-#: .\shuriken\apps\reader\templates\reader\index.html:30
-msgid "Purchase hardcopy"
+#: .\shuriken\apps\reader\templates\reader\index.html:65
+msgid "Purchase"
+msgstr ""
+
+#: .\shuriken\apps\reader\templates\reader\index.html:69
+msgid "Go to Amazon"
+msgstr ""
+
+#: .\shuriken\apps\reader\templates\reader\index.html:89
+msgid "Chapter "
 msgstr ""
 
 #: .\templates\base.html:11
 msgid "seo_description"
 msgstr ""
 
-#: .\templates\base.html:53
+#: .\templates\base.html:54
 msgid "Home"
 msgstr ""
 
-#: .\templates\base.html:92
-msgid "Request a meeting"
-msgstr ""
-
-#: .\templates\base.html:108
+#: .\templates\base.html:121
 msgid "Back to top"
 msgstr ""

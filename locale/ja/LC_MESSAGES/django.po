@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-22 22:49+0900\n"
+"POT-Creation-Date: 2020-05-29 20:30+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,58 +16,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\shuriken\apps\core\templates\core\index.html:14 .\templates\base.html:56
-msgid "Book"
-msgstr "著書"
+#: .\shuriken\apps\blog\templates\blog\index.html:24
+#: .\shuriken\apps\core\templates\core\index.html:24
+#: .\shuriken\apps\reader\templates\reader\index.html:24
+#: .\shuriken\apps\reader\templates\reader\reader.html:24
+#: .\templates\base.html:103
+msgid "Request a meeting"
+msgstr "お問い合わせ"
 
-#: .\shuriken\apps\core\templates\core\index.html:15
-#: .\shuriken\apps\reader\templates\reader\index.html:15
+#: .\shuriken\apps\blog\templates\blog\index.html:47
+msgid "Timeline"
+msgstr "タイムライン"
+
+#: .\shuriken\apps\core\templates\core\index.html:41 .\templates\base.html:57
+msgid "Book"
+msgstr "出版物"
+
+#: .\shuriken\apps\core\templates\core\index.html:42
+#: .\shuriken\apps\reader\templates\reader\index.html:42
 msgid ""
 "This book makes a deep dive into the history, structure, culture and market "
 "entry patterns of the Japanese startup ecosystem. The book is available free "
 "of charge."
-msgstr ""
+msgstr "日本のスタートアップエコシステムの歴史、構成、文化、市場進出におけるパターンを紹介します。本書を無料で提供します。"
 
-#: .\shuriken\apps\core\templates\core\index.html:17
-#: .\shuriken\apps\core\templates\core\index.html:32
-#: .\shuriken\apps\reader\templates\reader\index.html:17
-#: .\shuriken\apps\reader\templates\reader\index.html:32
+#: .\shuriken\apps\core\templates\core\index.html:45
+#: .\shuriken\apps\core\templates\core\index.html:69
+#: .\shuriken\apps\reader\templates\reader\index.html:45
 msgid "Read"
 msgstr "読む"
 
-#: .\shuriken\apps\core\templates\core\index.html:22 .\templates\base.html:59
+#: .\shuriken\apps\core\templates\core\index.html:53 .\templates\base.html:60
 msgid "Resources"
-msgstr "リソース"
+msgstr "ツール"
 
-#: .\shuriken\apps\core\templates\core\index.html:23
-#: .\shuriken\apps\reader\templates\reader\index.html:23
+#: .\shuriken\apps\core\templates\core\index.html:54
+#: .\shuriken\apps\reader\templates\reader\index.html:54
 msgid ""
 "Additional resources for the book, including summary slides, cultural tools, "
 "market entry tools and past market entry case studies."
-msgstr ""
+msgstr "日本進出のモデル、異文化理解を深めるフレームワークなどのツールを提供します。"
 
-#: .\shuriken\apps\core\templates\core\index.html:25
-#: .\shuriken\apps\reader\templates\reader\index.html:25
+#: .\shuriken\apps\core\templates\core\index.html:57
 msgid "Browse"
 msgstr "見る"
 
-#: .\shuriken\apps\core\templates\core\index.html:30 .\templates\base.html:62
+#: .\shuriken\apps\core\templates\core\index.html:65 .\templates\base.html:63
 msgid "Blog"
 msgstr "ブログ"
 
-#: .\shuriken\apps\core\templates\core\index.html:31
-#: .\shuriken\apps\reader\templates\reader\index.html:31
+#: .\shuriken\apps\core\templates\core\index.html:66
+#: .\shuriken\apps\reader\templates\reader\index.html:66
 msgid ""
 "My personal blog about Japanese startup ecosystem, the related business "
 "culture, foreign market entry patterns, and other concurrent topics on "
 "startups."
-msgstr ""
+msgstr "日本のスタートアップエコシステムとそれに関連する業界と日本進出の事例について投稿します。"
 
-#: .\shuriken\apps\core\templates\core\index.html:45
+#: .\shuriken\apps\core\templates\core\index.html:84
 msgid "Professional experience"
 msgstr "プロフェッショナルとしての経験"
 
-#: .\shuriken\apps\core\templates\core\index.html:47
+#: .\shuriken\apps\core\templates\core\index.html:87
 msgid "professional_bio"
 msgstr ""
 "1990年フィンランドで生まれ、立教大学大学院の国際経営研究科を卒業し、Slush "
@@ -77,171 +87,234 @@ msgstr ""
 "自治体のベンチャー企業支援プログラムを実施。2019年依頼、在日本フィンランド商"
 "工会議所にも所属。"
 
-#: .\shuriken\apps\core\templates\core\index.html:58
+#: .\shuriken\apps\core\templates\core\index.html:97
 msgid "Co-innovation advisory"
 msgstr "新規事業創出支援"
 
-#: .\shuriken\apps\core\templates\core\index.html:60
+#: .\shuriken\apps\core\templates\core\index.html:99
 msgid "cocreation_desc_one"
 msgstr ""
 "大企業のニーズの分析、ベンチャー企業の発掘、デューデリジェンス、協業案作成等"
 
-#: .\shuriken\apps\core\templates\core\index.html:61
+#: .\shuriken\apps\core\templates\core\index.html:100
 msgid "cocreation_desc_two"
 msgstr ""
 "協業と実証実験、チームの編成と育成、異文化理解の支援、PMO機能の立ち上げと運用"
 
-#: .\shuriken\apps\core\templates\core\index.html:62
+#: .\shuriken\apps\core\templates\core\index.html:101
 msgid "cocreation_desc_three"
 msgstr ""
 "事例：東証1部の上場企業が出資した海外ベンチャー企業の実証実験と日本進出の企"
 "画、運営、管理"
 
-#: .\shuriken\apps\core\templates\core\index.html:71
+#: .\shuriken\apps\core\templates\core\index.html:108
+msgid "professional_bio_example_1"
+msgstr "日系大企業の事業課題を理解した上で、課題に対して適切な解決を持つするベンチャー企業を紹介し、複数の候補者に対して定性的なデューデリジェンスを行い一社に絞った結果、数億円規模の出資と戦略的提携を齎しました。"
+
+#: .\shuriken\apps\core\templates\core\index.html:117
 msgid "Market entry advisory"
 msgstr "日本進出支援"
 
-#: .\shuriken\apps\core\templates\core\index.html:73
+#: .\shuriken\apps\core\templates\core\index.html:119
 msgid "entry_desc_one"
 msgstr ""
-"日本市場の基礎情報の提供、マーケットリサーチの実施、日本進出の企画の支援等"
+"日本市場の基礎情報の提供、マーケットリサーチの実施、日本進出の企画の支援等。"
 
-#: .\shuriken\apps\core\templates\core\index.html:74
+#: .\shuriken\apps\core\templates\core\index.html:120
 msgid "entry_desc_two"
 msgstr "事例：経済産業省が"
 
-#: .\shuriken\apps\core\templates\core\index.html:75
+#: .\shuriken\apps\core\templates\core\index.html:121
 msgid "entry_desc_three"
 msgstr ""
 "事例：経済産業省が共催した案件で海外ベンチャー企業を100社以上日本へ招待"
 
-#: .\shuriken\apps\core\templates\core\index.html:84
+#: .\shuriken\apps\core\templates\core\index.html:128
+msgid "professional_bio_example_2"
+msgstr "日本進出中の海外ベンチャーとその株主である日系企業に対し、日本進出のPMOをハンズオン型および多言語で実行し、外部関係者との商談などを実施し、日本で実証実験を行いました。結果として対象商品は現在でも誰でも使えるようになっています。"
+
+#: .\shuriken\apps\core\templates\core\index.html:137
 msgid "Startup growth advisory"
 msgstr "ベンチャー企業の成長支援"
 
-#: .\shuriken\apps\core\templates\core\index.html:86
+#: .\shuriken\apps\core\templates\core\index.html:139
 msgid "startup_desc_one"
 msgstr "ピッチのブラッシュアップ"
 
-#: .\shuriken\apps\core\templates\core\index.html:87
+#: .\shuriken\apps\core\templates\core\index.html:140
 msgid "startup_desc_two"
 msgstr "海外に関するリサーチ、"
 
-#: .\shuriken\apps\core\templates\core\index.html:88
+#: .\shuriken\apps\core\templates\core\index.html:141
 msgid "startup_desc_three"
 msgstr ""
 "事例：自治体運用のアクセラレーション施設でベンチャー企業向けにメンタリングを"
 "実施"
 
-#: .\shuriken\apps\core\templates\core\index.html:101
+#: .\shuriken\apps\core\templates\core\index.html:148
+msgid "professional_bio_example_3"
+msgstr "経済産業省などの政府機関に対し、政府機関のベンチャー企業政策を含む海外のスタートアップエコシステムに関する調査をし、北欧、インド、東南アジア、イスラエル等の多岐にわたる地域から優秀なベンチャー企業を発掘し、日系大企業と海外ベンチャーの間で300を超えた商談を主催。"
+
+#: .\shuriken\apps\core\templates\core\index.html:161
+msgid "Education"
+msgstr "教育"
+
+#: .\shuriken\apps\core\templates\core\index.html:170
+msgid "Rikkyo University, Graduate School of Business (Tokyo)"
+msgstr "立教大学大学院経営学研究科国際経営学専攻"
+
+#: .\shuriken\apps\core\templates\core\index.html:170
+msgid "Master of International Business"
+msgstr "国際経営学（修士号）"
+
+#: .\shuriken\apps\core\templates\core\index.html:172
+msgid ""
+"Graduation thesis advised Bridgestone on a strategic global M&A using DCF "
+"and multiples valuations"
+msgstr "ブリヂストンへグローバル企業の戦略的買収を卒業論文で提案"
+
+#: .\shuriken\apps\core\templates\core\index.html:173
+msgid "Conducted Japan market entry feasibility studies for global startups"
+msgstr "海外のベンチャーに対して日本進出プランの作成、マーケットリサーチを実施"
+
+#: .\shuriken\apps\core\templates\core\index.html:182
+msgid "University of Turku, School of Economics (Finland)"
+msgstr "トゥルク大学経済学部国際経営学科（フィンランド）"
+
+#: .\shuriken\apps\core\templates\core\index.html:182
+msgid "Bachelor of Science in Economics and Business Administration"
+msgstr "国際経営学（学士号）"
+
+#: .\shuriken\apps\core\templates\core\index.html:184
+msgid ""
+"Graduation thesis focused Japanese business culture and business "
+"communication"
+msgstr "日本のビジネス文化とコミュニケーションについて卒業論文で議論"
+
+#: .\shuriken\apps\core\templates\core\index.html:185
+msgid "Minor in information systems management and Japanese language"
+msgstr "情報システムの開発およびマネジメントについて学習"
+
+#: .\shuriken\apps\core\templates\core\index.html:198
 msgid "Technical abilities"
 msgstr "知恵と技術力"
 
-#: .\shuriken\apps\core\templates\core\index.html:112
+#: .\shuriken\apps\core\templates\core\index.html:208
 msgid "Innovation management"
 msgstr "イノベーション・マネジメント"
 
-#: .\shuriken\apps\core\templates\core\index.html:118
+#: .\shuriken\apps\core\templates\core\index.html:214
 msgid "skills_startups_one"
 msgstr "事業戦略と課題に合わせた新規事業提案を作成および実施"
 
-#: .\shuriken\apps\core\templates\core\index.html:119
+#: .\shuriken\apps\core\templates\core\index.html:215
 msgid "skills_startups_two"
 msgstr "協業先となるベンチャー企業の発掘、精査、共同開発を支援"
 
-#: .\shuriken\apps\core\templates\core\index.html:120
+#: .\shuriken\apps\core\templates\core\index.html:216
 msgid "skills_startups_three"
 msgstr "ベンチャー企業の成長、市場進出、サービス開発の支援"
 
-#: .\shuriken\apps\core\templates\core\index.html:121
+#: .\shuriken\apps\core\templates\core\index.html:217
 msgid "skills_startups_four"
 msgstr "リーンキャンバス、IRモデル、LoO等の各種ツールを適用"
 
-#: .\shuriken\apps\core\templates\core\index.html:133
+#: .\shuriken\apps\core\templates\core\index.html:229
 msgid "Project management"
 msgstr "プロジェクト・マネジメント"
 
-#: .\shuriken\apps\core\templates\core\index.html:139
+#: .\shuriken\apps\core\templates\core\index.html:235
 msgid "skills_project_one"
 msgstr "Certified Associate in Project Management (CAPM)&reg;資格"
 
-#: .\shuriken\apps\core\templates\core\index.html:140
+#: .\shuriken\apps\core\templates\core\index.html:236
 msgid "skills_project_two"
 msgstr "プロジェクト憲章の作成から進捗管理や問題解決まで統括"
 
-#: .\shuriken\apps\core\templates\core\index.html:141
+#: .\shuriken\apps\core\templates\core\index.html:237
 msgid "skills_project_three"
 msgstr "文化を超えたバーチャルチームの育成および運営を実施"
 
-#: .\shuriken\apps\core\templates\core\index.html:142
+#: .\shuriken\apps\core\templates\core\index.html:238
 msgid "skills_project_four"
 msgstr "Backlog、Jira、Trello、Astana、Slack等の各種ツールの適用"
 
-#: .\shuriken\apps\core\templates\core\index.html:156
+#: .\shuriken\apps\core\templates\core\index.html:252
 msgid "Intercultural management"
 msgstr "異文化マネジメント"
 
-#: .\shuriken\apps\core\templates\core\index.html:162
+#: .\shuriken\apps\core\templates\core\index.html:258
 msgid "skills_culture_one"
 msgstr "会議のファシリテーションおよび通訳を日本語と英語で実施"
 
-#: .\shuriken\apps\core\templates\core\index.html:163
+#: .\shuriken\apps\core\templates\core\index.html:259
 msgid "skills_culture_two"
 msgstr "異文化理解を深める講義で事例や異文化の分析方法を共有"
 
-#: .\shuriken\apps\core\templates\core\index.html:164
+#: .\shuriken\apps\core\templates\core\index.html:260
 msgid "skills_culture_three"
 msgstr "Hofstede、Hall、Meyer、Trompenaars等の各種ツールを適用"
 
-#: .\shuriken\apps\core\templates\core\index.html:165
+#: .\shuriken\apps\core\templates\core\index.html:261
 msgid "skills_culture_four"
 msgstr "8年間を超えた国際経営学の研究を含めた著書を出版"
 
-#: .\shuriken\apps\core\templates\core\index.html:177
+#: .\shuriken\apps\core\templates\core\index.html:273
 msgid "Software development"
 msgstr "ソフトウェア開発"
 
-#: .\shuriken\apps\core\templates\core\index.html:183
+#: .\shuriken\apps\core\templates\core\index.html:279
 msgid "skills_software_one"
 msgstr "C++、PHP、Symfony、Python、Django等の実用的な知恵"
 
-#: .\shuriken\apps\core\templates\core\index.html:184
+#: .\shuriken\apps\core\templates\core\index.html:280
 msgid "skills_software_two"
 msgstr "Scrum、Kanban等の開発方法に関する知識を適応"
 
-#: .\shuriken\apps\core\templates\core\index.html:185
+#: .\shuriken\apps\core\templates\core\index.html:281
 msgid "skills_software_three"
 msgstr "Git、SVN、CVS、TestFlight、npm等の関連ツールの知恵"
 
-#: .\shuriken\apps\core\templates\core\index.html:186
+#: .\shuriken\apps\core\templates\core\index.html:282
 msgid "skills_software_four"
 msgstr "このウェブサイトをゼロから作成しGithubで公開中"
 
-#: .\shuriken\apps\reader\templates\reader\index.html:14
-msgid "Download PDF"
-msgstr "PDFをダウンロード"
+#: .\shuriken\apps\core\templates\core\index.html:298
+msgid "Languages"
+msgstr "言語力"
 
-#: .\shuriken\apps\reader\templates\reader\index.html:22
-msgid "Browse online"
+#: .\shuriken\apps\reader\templates\reader\index.html:41
+#, fuzzy
+#| msgid "Browse online"
+msgid "Read online"
 msgstr "見る"
 
-#: .\shuriken\apps\reader\templates\reader\index.html:30
-msgid "Purchase hardcopy"
-msgstr "ハードカバーを購入"
+#: .\shuriken\apps\reader\templates\reader\index.html:53
+#: .\shuriken\apps\reader\templates\reader\index.html:57
+msgid "Download"
+msgstr "PDFをダウンロード"
+
+#: .\shuriken\apps\reader\templates\reader\index.html:65
+msgid "Purchase"
+msgstr "購入"
+
+#: .\shuriken\apps\reader\templates\reader\index.html:69
+msgid "Go to Amazon"
+msgstr "アマゾンへ移動"
+
+#: .\shuriken\apps\reader\templates\reader\index.html:89
+msgid "Chapter "
+msgstr "Chapter "
 
 #: .\templates\base.html:11
 msgid "seo_description"
-msgstr ""
+msgstr "SEO_DESCRIPTION"
 
-#: .\templates\base.html:53
+#: .\templates\base.html:54
 msgid "Home"
 msgstr "ホーム"
 
-#: .\templates\base.html:92
-msgid "Request a meeting"
-msgstr "お問い合わせ"
-
-#: .\templates\base.html:108
+#: .\templates\base.html:121
 msgid "Back to top"
 msgstr "上へ戻る"
 

@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings
 from django.conf.urls.i18n import i18n_patterns
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('shurikontrol/', admin.site.urls),
@@ -26,4 +28,8 @@ urlpatterns += i18n_patterns(
     path('blog/', include('shuriken.apps.blog.urls')),
     path('resources/', include('shuriken.apps.resources.urls')),
     path('book/', include('shuriken.apps.reader.urls')),
+    path('summernote/', include('django_summernote.urls')),
 prefix_default_language=True)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

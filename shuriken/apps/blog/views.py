@@ -9,3 +9,8 @@ def index(request):
       'posts': posts
    }
    return render(request, 'blog/index.html', context)
+
+def read(request):
+   post = None
+
+   return render(request, 'blog/index.html', {})

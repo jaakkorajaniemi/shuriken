@@ -26,10 +26,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'shuriken.apps.core',
     'shuriken.apps.blog',
     'shuriken.apps.reader',
     'shuriken.apps.resources',
+    'shuriken.apps.spider',
 ]
 
 MIDDLEWARE = [
@@ -119,8 +121,20 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL = '/files/'
+
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'files')
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "static"), 
 ]
 
 LOCALE_PATHS = ( os.path.join(PROJECT_ROOT, 'locale'), )
+
+EMAIL_HOST = os.environ['SHURIKEN_HOST']
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL']
+EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_PASSWORD']
+EMAIL_USE_TLS = True

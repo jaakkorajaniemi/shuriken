@@ -6,6 +6,7 @@ class Post(models.Model):
     accessed = models.IntegerField(default=0, null=False)
     title = models.CharField(default='', max_length=256, null=False)
     content = models.TextField(default='', null=False)
+    slug = models.CharField(default='', max_length=128, null=False)
 
     # Short description of the post (not always displayed, depending on the case)
     description = models.TextField(default='', null=False)
@@ -29,6 +30,8 @@ class Post(models.Model):
     def convert(self):
         pass
 
+    def __str__(self):
+        return self.title
 
 class File(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Published at', null=False)
