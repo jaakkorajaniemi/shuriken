@@ -2,32 +2,45 @@
 {% load static %}
 {% load i18n %}
 
+
+
 {% block banner %}
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{% static 'img/banner-specimen-9.png' %}" class="img-responsive" alt="">
-            <div class="container" id="particles-js">
-                <div class="carousel-caption text-left">
-                    {% if request.LANGUAGE_CODE == 'ja' %}
-                    <p lang="ja" class="japanese">
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        
-                    </p>
-                    {% elif request.LANGUAGE_CODE == 'en' %}
-                    <p class="lead text-dark">
-                        <span class="align-bottom">Global innovation consultant in the Japanese market. Helping startups and corporations build the best of each other.</span>
-                    </p>
-                    {% endif %}
-                    <a class="btn btn-md btn-info" href="#" role="button">{% trans 'Request a meeting' %} &raquo;</a>
+    <div id="sh-section-header" class="slide" data-ride="carousel">
+        <div class="inner">
+            <div class="item active">
+
+                {% block BANNER_IMG %}<img src="{% static 'img/header01.png' %}" class="img-responsive" alt="{% trans 'Banner image' %}">{% endblock %}
+                <div id="particles-js"></div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 my-5">
+                            {% if request.LANGUAGE_CODE == 'ja' %}
+                            <div class="feature-ja rounded">
+                                <p lang="ja" class="mb-0"></p>
+                                <div style="clear: both"></div>
+                            </div> 
+                            {% else %}
+                            <svg viewbox="0 0 10 6">
+                                <text x="0" y="1" text-anchor="left" font-size="1.4" fill="rgba(255,255,255,0.0" stroke-width=".035" stroke="#000" font-family="Bebas Neue">THE</text>
+                                <text x="0" y="2.1" text-anchor="left" font-size="1.4" fill="rgba(255,0,0,0.5)" stroke-width=".035" stroke="#000" font-family="Bebas Neue">JAPANESE</text>
+                                <text x="0" y="3.2" text-anchor="left" font-size="1.4" fill="rgba(0,0,0,1)" stroke-width=".035" stroke="#000" font-family="Bebas Neue">STARTUP ECOSYSTEM</text>
+                                <text x="0" y="4.0" text-anchor="left" font-size="0.7" fill="rgba(0,0,0,1)" stroke-width=".035" stroke="#000" font-family="Bebas Neue">2020</text>
+                                <text x="0" y="5.0" text-anchor="left" font-size="0.5" fill="rgba(0,0,0,0.5)" stroke-width=".035" stroke="none" font-family="Bebas Neue">AUTHOR: JAAKKO RAJANIEMI</text>
+                            </svg>
+                            {% endif %}
+                            {% block HEADER_BUTTONS %}
+                            <button class="btn btn-md btn-info" onclick="window.location.href='/contact';">{% trans 'Request a meeting' %} &raquo;</button>
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bar"></div>
                 </div>
             </div>
         </div>
     </div>
-    <a name="top"></a>
-</div>
 {% endblock %}
 
 {% block body %}

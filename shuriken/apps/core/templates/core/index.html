@@ -2,41 +2,8 @@
 {% load static %}
 {% load i18n %}
 
-{% block banner %}
-<div id="sh-section-header" class="slide" data-ride="carousel">
-    <div class="inner">
-        <div class="item active">
-
-            <img src="{% static 'img/banner-specimen-9.png' %}" class="img-responsive" alt="">
-            <div id="particles-js"></div>
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 my-5">
-                        {% if request.LANGUAGE_CODE == 'ja' %}
-                        <div class="feature-ja rounded">
-                            <p lang="ja" class="mb-0">私はフィンランドに生まれたが、2017年から東京に住んでいる。</p>
-                            <p lang="ja" class="mb-0">私はフィンランドに生まれたが、2017年から東京に住んでいる。</p>
-                            <p lang="ja" class="mb-0">私はフィンランドに生まれたが、2017年から東京に住んでいる。</p>
-                            <div style="clear: both"></div>
-                        </div> 
-                        {% else %}
-                        <div class="feature rounded">
-                            <p>An open innovation and startup consultant based in Tokyo specialized in startups, global market entry, corporate innovation and public sector innovation advisory.</p>
-                            <p class="mb-0">Born and raised in Helsinki with a strong background in programming and interest in culture, travel and lifestyle.</p>
-                        </div> 
-                        {% endif %}
-                        <a class="btn btn-md btn-info" href="/contact" role="button">{% trans 'Request a meeting' %} &raquo;</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bar"></div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endblock %}
+{% block META_DESCRIPTION %}Japan market entry information and experienced hands-on market entry consulting specialized in startups and large corporation partnerships.{% endblock %}
+{% block SEOTITLE %}Experienced global startup and Japan market entry consulting{% endblock %}
 
 {% block body %}
 <div class="container">
@@ -45,11 +12,11 @@
             <div class="sh-warpbox shadow bg-light rounded">
                 <div class="p-3 mb-2">
                     <i class="fa fa-envelope fa-3x" style="color: #032"></i>
-                    <h4 class="mt-1">{% trans 'Request a meeting' %}</h4>
+                    <h4 class="mt-1">{% trans 'Contact form' %}</h4>
                     <p class="mb-5">Use this button for inquiries. All business inquiries will be handled confidentially.</p>
                 </div>  
                 <div style="position: absolute; bottom: 1rem; width: 100%;">
-                    <button class="btn btn-info" onclick="window.location.href='/contact';" role="button">{% trans 'Request a meeting' %} &raquo;</button>
+                    <button class="btn btn-info" onclick="window.location.href='/contact';" role="button">{% trans 'Contact form' %} &raquo;</button>
                 </div>
             </div>
         </div>
@@ -61,7 +28,7 @@
                     <p class="mb-5">Use this link to access my LinkedIn profile and send a direct message.</p>
                 </div>
                 <div style="position: absolute; bottom: 1rem; width: 100%;">
-                    <button class="btn btn-info" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';" role="button">{% trans 'Access' %} &raquo;</button>
+                    <button class="btn btn-info" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';">{% trans 'Access' %} &raquo;</button>
                 </div>
             </div>
         </div>
@@ -80,8 +47,6 @@
     </div>
 
     <hr class="sh-divider">
-    <!-- START THE FEATURETTES -->
-
 
     <div class="row">
         <div class="container sh-experience">
@@ -89,11 +54,11 @@
                 <div class="col-lg">
                     <h2 class="featurette-heading">{% trans 'Professional experience' %}</h2>
                     <p class="light">
-                        I currently work as a Global Innovation Consultant for Deloitte Tohmatsu Venture Support (Tokyo),
+                        I currently work as a Global Innovation Consultant for <a href="https://www2.deloitte.com/jp/en/pages/about-deloitte/articles/dtvs/dtvs.html" target="_blank" rel="noopener">Deloitte Tohmatsu Venture Support</a> (Tokyo),
                         where I provide direct startup mentorship, advise Fortune 500 corporations on startup co-innovation,
                         and provide public sector startup advisory for ministries and local governments. Before Deloitte, I was an 
-                        organizer at Slush Tokyo and Tech in Asia. I am a Certified Associate of Project Management (CAPM)®, 
-                        a member of the Finnish Chamber of Commerce Japan, and business-proficient in English, Japanese and Finnish.
+                        organizer at <a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a> and <a href="https://www.techinasia.com/" target="_blank" rel="noopener">Tech in Asia</a>. I am a <a href="https://www.pmi.org/certifications/types/certified-associate-capm" target="_blank" rel="noopener">Certified Associate of Project Management (CAPM)®</a>, 
+                        a member of the <a href="http://www.fccj.or.jp/" target="_blank" rel="noopener">Finnish Chamber of Commerce Japan</a>, and business-proficient in English, Japanese (<a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank" rel="noopener">N1</a>) and Finnish languages.
                     </p>
                 </div>
             </div>
@@ -169,14 +134,14 @@
             <div class="row">
                 <div class="col-lg-3" style="text-align: center">
                     <figure class="figure my-auto">
-                        <img class="rounded" src="{% static 'img/2018_Ignite.jpg' %}" alt="" width="200" height="200" />
-                        <figcaption class="figure-caption">Slush Tokyo, 2018 (Japan)</figcaption>
+                        <img class="rounded" src="{% static 'img/cvspeaker01.jpg' %}" alt="{% trans 'Judging a startup pitch contest at Slush Tokyo, 2018' %}" width="200" height="200" />
+                        <figcaption class="figure-caption"><a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a>, 2018 (Japan)</figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-3" style="text-align: center">
                     <figure class="figure my-auto">
-                        <img class="rounded" src="{% static 'img/2018_Ignite3.jpg' %}" alt="" width="200" height="200" />
-                        <figcaption class="figure-caption">Ignite Manila, 2018 (Philippines)</figcaption>
+                        <img class="rounded" src="{% static 'img/cvspeaker02.jpg' %}" alt="{% trans 'Speaking about the Japanese startup ecosystem at Ignite conference, Manila, 2018' %}" width="200" height="200" />
+                        <figcaption class="figure-caption"><a href="https://www.ignite.ph/" target="_blank" rel="noopener">Ignite Manila</a>, 2018 (Philippines)</figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-6 my-auto">
@@ -203,7 +168,7 @@
                     <i class="fa fa-graduation-cap fa-3x pb-2" style="color: #422"></i>
                 </div>
                 <div class="col-lg my-auto">
-                    <h3>{% trans 'Rikkyo University, Graduate School of Business (Tokyo)' %}</h3>
+                    <h3><a href="https://rikkyo-mib.jp/" target="_blank" rel="noopener">Rikkyo University, Graduate School of Business</a> (Tokyo)</h3>
                     <ul>
                         <li>Graduation thesis focused global strategic M&A with DCF, multiples valuations and qualitative due diligence.</li>
                         <li>Conducted a Japan market entry feasibility study for a Nordic retail startup.</li>
@@ -215,7 +180,7 @@
                     <i class="fa fa-graduation-cap fa-3x pb-2" style="color: #224"></i>
                 </div>
                 <div class="col-lg my-auto">
-                    <h3>{% trans 'University of Turku, School of Economics (Finland)' %}</h3>
+                    <h3><a href="https://www.utu.fi/en/university/turku-school-of-economics" target="_blank" rel="noopener">University of Turku, School of Economics</a> (Finland)</h3>
                     <ul>
                         <li>Graduation thesis focused Japanese business culture and intercultural communication.</li>
                         <li>Certificates in Japanese language and information systems management in business administration.</li>
@@ -271,7 +236,7 @@
                                     <li>Experience of both PM and PMO roles</li>
                                     <li>Managing virtual and multicultural teams</li>
                                     <li>Waterfall, agile, scrum and kanban styles</li>
-                                    <li>Certified Associate in Project Management®</li>
+                                    <li><a href="https://www.pmi.org/certifications/types/certified-associate-capm" target="_blank" rel="noopener">Certified Associate of Project Management®</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -293,7 +258,7 @@
                                 <ul class="p-0 mx-5">
                                     <li>Meeting facilitation in English and Japanese</li>
                                     <li>Lectures about cultural differences</li>
-                                    <li>Tools from Hofstede, Meyer, Hall, and more</li>
+                                    <li>Tools from <a href="https://www.hofstede-insights.com/product/compare-countries/" target="_blank" rel="noopener">Hofstede</a>, <a href="https://www.erinmeyer.com/" target="_blank" rel="noopener">Meyer</a>, <a href="https://en.wikipedia.org/wiki/Edward_T._Hall" target="_blank" rel="noopener">Hall</a>, and more</li>
                                     <li>Book about cultural differences (in the works)</li>
                                 </ul>
                             </div>
@@ -315,7 +280,7 @@
                                     <li>Market research and consumer research</li>
                                     <li>Product customer journey development</li>
                                     <li>Experience of Python, Django, PHP, Symfony, C++</li>
-                                    <li>Developed this website (available on github)</li>
+                                    <li>Developed this website (<a href="https://github.com/jaakkorajaniemi" target="_blank" rel="noopener">available on github</a>)</li>
                                 </ul>
                             </div>
                         </div>

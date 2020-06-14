@@ -1,26 +1,24 @@
-# Shuriken product environment settings
-
 import os
-gettext = lambda s: s
 
-SECRET_KEY = 'qB-2Ta6=%RaX%)WeD4r!t%!q-imNW091QQ)7=WoP)!)--bGH=5'
-DEBUG = False
-ALLOWED_HOSTS = []
-
-# ./shuriken
-# Path to the level with apps/ dir and settings/ dir
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 PROJECT_APP_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-
-# ./
-# Path to the level with manage.py
 PROJECT_ROOT = os.path.abspath(os.path.dirname(PROJECT_APP_ROOT))
 
-# Utility paths
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'files')
-STATICFILES_DIRS = [os.path.join(PROJECT_ROOT, "static"),]
-LOCALE_PATHS = (os.path.join(PROJECT_ROOT, 'locale'),)
 
-# Apps
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'vn=p%8hoy798dpd)g)rb!oyr-v!!w4*c9w5kh)xn%%-a0kydw8'
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+ALLOWED_HOSTS = []
+
+
+# Application definition
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -29,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_summernote',
-    'common',
     'shuriken.apps.core',
     'shuriken.apps.blog',
     'shuriken.apps.reader',
@@ -37,7 +34,6 @@ INSTALLED_APPS = [
     'shuriken.apps.spider',
 ]
 
-# Middleware
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -49,19 +45,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Options
-OPTIONS={
-    'libraries': {
-        'setvar': 'common.templatetags.setvar',
-    },
-}
-
-# Urls
 ROOT_URLCONF = 'shuriken.urls'
-STATIC_URL = '/static/'
-MEDIA_URL = '/files/'
 
-# Templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -79,16 +64,28 @@ TEMPLATES = [
     },
 ]
 
-# Languages
 LANGUAGES = [
     ('ja', 'Japanese'),
     ('en', 'English'),
 ]
 
-# WSGI
 WSGI_APPLICATION = 'shuriken.wsgi.application'
 
+
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_ROOT, 'exclusions/db.sqlite3'),
+    }
+}
+
+
 # Password validation
+# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -106,17 +103,38 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
+# https://docs.djangoproject.com/en/3.0/topics/i18n/
+
 LANGUAGE_CODE = 'ja'
-TIME_ZONE = 'Japan'
+
+TIME_ZONE = 'UTC'
+
 USE_I18N = True
+
 USE_L10N = True
+
 USE_TZ = True
 
 
-# Email
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.0/howto/static-files/
+
+STATIC_URL = '/static/'
+
+MEDIA_URL = '/files/'
+
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'files')
+
 X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_ROOT, "static"), 
+]
+
+LOCALE_PATHS = ( os.path.join(PROJECT_ROOT, 'locale'), )
+
 EMAIL_HOST = os.environ['SHURIKEN_EMAIL_HOST']
 EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT']
-EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS']
+EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_USERNAME']
 EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_EMAIL_PASSWORD']
 EMAIL_USE_TLS = True

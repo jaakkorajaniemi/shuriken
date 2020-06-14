@@ -2,139 +2,100 @@
 {% load static %}
 {% load i18n %}
 
-{% block banner %}
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{% static 'img/banner-specimen-9.png' %}" class="img-responsive" alt="">
-            <div class="container" id="particles-js">
-                <div class="carousel-caption text-left">
-                    {% if request.LANGUAGE_CODE == 'ja' %}
-                    <p lang="ja" class="japanese">
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        1990年にフィンランドで生まれ、<br />来日してから立教大学大学院を卒業し、<br />ベンチャー企業の日本進出支援と<br />大企業の新規事業創出支援業務に従事。<br /><br />
-                        
-                    </p>
-                    {% elif request.LANGUAGE_CODE == 'en' %}
-                    <p class="lead text-dark">
-                        <span class="align-bottom">Global innovation consultant in the Japanese market. Helping startups and corporations build the best of each other.</span>
-                    </p>
-                    {% endif %}
-                    <a class="btn btn-md btn-info" href="#" role="button">{% trans 'Request a meeting' %} &raquo;</a>
+{% block body %}
+<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <!-- Blog browser -->
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-md p-3 shadow rounded" style="font-size: 0.9rem">
+                            <h2>{% trans 'Timeline' %}</h2>
+                            <div>
+                                <span>2020.01.16</span> - <span>1 year ago</span>
+                                <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
+                            </div>
+
+                            <div>
+                                <span>2020.01.16</span> - <span>1 year ago</span>
+                                <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
+                            </div>
+                            
+                            <div>
+                                <span>2020.01.16</span> - <span>1 year ago</span>
+                                <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
+                            </div>
+                            
+                            <div>
+                                <span>2020.01.16</span> - <span>1 year ago</span>
+                                <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <!-- Blog posts -->
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-lg shadow rounded">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-1 p-0 py-4" style="font-size: 0.9rem; text-align: center">
+                                        <span>2019</span><br />
+                                        <span>Nov</span><br />
+                                        <span>11</span><br />
+                                    </div>
+                                    <div class="col-lg-11 p-3">
+                                        <h2 class="featurette-heading">Lorem ipsum dolor sit amet.</h2>
+                                        <p class="lead" style="color: purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sodales lectus, sit amet volutpat orci elementum eu.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sodales lectus, sit amet volutpat orci elementum eu. Vivamus auctor ipsum vitae leo consectetur, non consectetur leo porta. Etiam eget tempor sapien. Pellentesque finibus euismod nibh, nec vestibulum magna elementum molestie. Praesent consectetur purus nibh, ac bibendum ex malesuada sed. Proin tortor ante, ultrices eu felis vitae, blandit auctor neque. Morbi lacinia egestas libero quis pharetra. Fusce at ullamcorper nulla.
+                                        </p><p>Nam congue consequat pharetra. Proin tempus purus a nulla pellentesque, eget fermentum eros mollis. Praesent vel consectetur ante. Aliquam massa odio, fringilla sed luctus sed, rhoncus viverra diam. Quisque tincidunt, magna a porttitor mattis, arcu neque condimentum diam, tincidunt aliquet purus ligula ac mi. Ut eu neque iaculis, condimentum ante sed, malesuada neque. Praesent ut mattis magna. Aliquam tempor mattis velit vitae aliquet. Aenean massa sem, commodo eget eleifend quis, sagittis non sem. Maecenas ut mattis arcu, eget lacinia justo. Etiam suscipit leo nec leo lobortis suscipit. Aliquam faucibus mi id mi ultricies, eget dictum turpis sagittis. Curabitur placerat purus id mauris condimentum vulputate. Fusce rhoncus ac tortor eget condimentum. Vivamus fringilla at nunc sit amet auctor. In ultrices convallis risus sed varius.
+                                        </p><p>Quisque quis eros posuere, luctus lacus ut, fermentum risus. Integer vulputate nisi eu pharetra mollis. Nullam sed tincidunt velit, et pulvinar risus. Nullam ultricies, urna sed consectetur laoreet, nisi eros condimentum massa, non posuere neque turpis vulputate libero. Aenean faucibus neque porta efficitur egestas. Suspendisse sollicitudin tempor massa eu vulputate. Quisque dolor turpis, dapibus et pulvinar id, pulvinar vel elit. Proin orci tortor, porta sit amet nunc a, mollis suscipit libero. Curabitur finibus felis neque, sit amet viverra quam cursus ut. In mollis, urna eu hendrerit tempor, tortor felis viverra ipsum, at placerat ex magna ut odio. Nam sed dolor eleifend, finibus risus nec, consequat augue.
+                                        </p><p>Donec at consectetur quam. Nulla eu sollicitudin ligula. Quisque elementum dignissim massa eu ultricies. Praesent consectetur elit ut bibendum lacinia. Vivamus posuere eget nisi vel tempus. Suspendisse potenti. Sed sollicitudin nisl et quam porttitor, eget facilisis urna ultrices. Nunc faucibus feugiat magna, eget aliquam lectus placerat facilisis. Phasellus elit lectus, eleifend in dui eu, sodales porta orci.
+                                        </p><p>Suspendisse congue velit vel elit vulputate, at volutpat mauris porta. Donec euismod, massa ut elementum auctor, lectus eros sollicitudin lorem, eu fringilla lectus nisi in leo. Donec tincidunt ligula at purus mollis tincidunt. Fusce aliquam diam vitae nisl tristique venenatis. Morbi quis congue magna, at euismod libero. Etiam condimentum egestas sem ut luctus. Donec fringilla porttitor viverra. Nulla in tellus mauris. Sed tempor auctor dui, nec placerat velit interdum non. Aenean diam enim, molestie sed porttitor sit amet, scelerisque efficitur lectus.</p>                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-lg p-3 shadow rounded">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-1 p-0 py-4" style="font-size: 0.9rem; text-align: center">
+                                        <span>2019</span><br />
+                                        <span>Nov</span><br />
+                                        <span>11</span><br />
+                                    </div>
+                                    <div class="col-lg-11 p-3">
+                                        <h2 class="featurette-heading">討ワ掲供らぱげー嶋出焦まぼ夜引わん乏練なわちご</h2>
+                                        <p class="lead" style="color: purple">討ワ掲供らぱげー嶋出焦まぼ夜引わん乏練なわちご秋川リ遣44府冷勧封6極放なべとも任身アクモ身夫ク第心る余図メミ全衆ス行放しじい河儀ソネ公慣葬付ごフもず。</p>
+                                        <p>旅レぞも楽社暮百ざわの掲崇ヌ奈器ス比見ホラヨ濯強トリレヲ岡稿ち場申破ヨエナ右日クハメリ条局レ州済いつばく投格かなりぐ炎少ナミシ大36侮冗凄レ。安ちぐろを京芸ハヨ強見コロ衛迎情アメ供富ど県後ずふ殺待んちラり鹿1情ぜ計29安陸そゆお代弁んあで判別ハ新特壮憶軒要ぽ。明びわ日達や会真観フ場日メソム自題を院用86芸セケエ容埼ぴばルや明波ヲトアメ早平1辞ろ発増侃リ。</p>
+                                        <p>2身ぽぞよじ変禁つぶせ調講セ就10会深ぴ検能ぽらそド手本べしたぽ先直タモテ備出へじふ部社イ国石だごフぜ皇設ノワソウ軽江昭54科れか体冊鳥お。藤びうクぽ泊写なリと移白チキ幸五ぜう子高ニヤリ水到キニケル極支ぎ掛上メ優動かたにり会3考村ヱ制更カハコ覧達こイ町37庁治ぐをよ稿験るはリ帯魚間立失くだ。</p>
+                                        <p>討ワ掲供らぱげー嶋出焦まぼ夜引わん乏練なわちご秋川リ遣44府冷勧封6極放なべとも任身アクモ身夫ク第心る余図メミ全衆ス行放しじい河儀ソネ公慣葬付ごフもず。盗島ルレエ庫断思郎ぱし蔵9教もこ確5県びトごめ読京名げ当体うぼの栖柔ツ育省へ効向際ゃ。広任ラム法必ラ代周しま優択ふら謙日ヌト値補ノハ合会タ催球6林芸スク聞述激熱信ん。</p>
+                                        <p>江シラ今初フヌセ話億小まそゅぽ行秋局ぽびっこ合40使にるま庫騎ハレツ成田ロオ退違断彩枝雨美たス。然労ヘアワヱ念来ッンへや均固もご国通コセ路議イスヲク意豊るっち思裏到ずろか売同マケ食90町ぐしいで必覧ワツマ柔入宇油代ぼ。可作ヘシフモ次8士ゃ転優マリノレ商権すそなッ人代ラばやと碁複しリもる育島い医辺ゆ可読立ふりねし選45授げトわ。</p>
+                                        <p>戦とでた同文リ聞委で連雄業どけびぞ断農問じえて部呼内五にだ競奈売ケムフテ経強オコウラ更千テヱ人滑で比74愛ねリぴ文升忍曇で。作ア利氷てまり相使ユヲ館時タ害容てまゆべ作玉ドりルリ改止定キ作騒クらはゅ晴52供マオウノ品闘カテナ備春環典嗣つわ。供ぎぶけ紹度ノサフ投8移ヘ給診ヘ止7旅スト金試決へゆ性介ミカマ波4能子角ぽよ暑明づ月由ゃべ盗側太か。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% if posts %}
+                    {% for post in posts %}
+                    <div class="row my-3">
+                        <div class="col-lg p-3 shadow rounded">
+                            <h2 class="featurette-heading">{{ post.title }}</h2>
+                            <p class="lead">{{ post.description }}</p>
+                            <p>{{ post.content }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block body %}
-<div class="container-fluid">
-
-
-    <!-- Three columns of text below the carousel -->
-
-    <!-- START THE FEATURETTES -->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <!-- Blog browser -->
-                        <div class="container">
-                            <div class="row my-3">
-                                <div class="col-md p-3 shadow rounded" style="font-size: 0.9rem">
-                                    <h2>{% trans 'Timeline' %}</h2>
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
-
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
-                                    
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
-                                    
-                                    <div>
-                                        <span>2020.01.16</span> - <span>1 year ago</span>
-                                        <p><a href="#" target="_blank">Specimen post about Japanese exit from the emergency state.</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <!-- Blog posts -->
-                        <div class="container">
-                            <div class="row my-3">
-                                <div class="col-lg shadow rounded">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-1 p-0 py-4" style="font-size: 0.9rem; text-align: center">
-                                                <span>2019</span><br />
-                                                <span>Nov</span><br />
-                                                <span>11</span><br />
-                                            </div>
-                                            <div class="col-lg-11 p-3">
-                                                <h2 class="featurette-heading">Lorem ipsum dolor sit amet.</h2>
-                                                <p class="lead" style="color: purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sodales lectus, sit amet volutpat orci elementum eu.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat sodales lectus, sit amet volutpat orci elementum eu. Vivamus auctor ipsum vitae leo consectetur, non consectetur leo porta. Etiam eget tempor sapien. Pellentesque finibus euismod nibh, nec vestibulum magna elementum molestie. Praesent consectetur purus nibh, ac bibendum ex malesuada sed. Proin tortor ante, ultrices eu felis vitae, blandit auctor neque. Morbi lacinia egestas libero quis pharetra. Fusce at ullamcorper nulla.
-                                                </p><p>Nam congue consequat pharetra. Proin tempus purus a nulla pellentesque, eget fermentum eros mollis. Praesent vel consectetur ante. Aliquam massa odio, fringilla sed luctus sed, rhoncus viverra diam. Quisque tincidunt, magna a porttitor mattis, arcu neque condimentum diam, tincidunt aliquet purus ligula ac mi. Ut eu neque iaculis, condimentum ante sed, malesuada neque. Praesent ut mattis magna. Aliquam tempor mattis velit vitae aliquet. Aenean massa sem, commodo eget eleifend quis, sagittis non sem. Maecenas ut mattis arcu, eget lacinia justo. Etiam suscipit leo nec leo lobortis suscipit. Aliquam faucibus mi id mi ultricies, eget dictum turpis sagittis. Curabitur placerat purus id mauris condimentum vulputate. Fusce rhoncus ac tortor eget condimentum. Vivamus fringilla at nunc sit amet auctor. In ultrices convallis risus sed varius.
-                                                </p><p>Quisque quis eros posuere, luctus lacus ut, fermentum risus. Integer vulputate nisi eu pharetra mollis. Nullam sed tincidunt velit, et pulvinar risus. Nullam ultricies, urna sed consectetur laoreet, nisi eros condimentum massa, non posuere neque turpis vulputate libero. Aenean faucibus neque porta efficitur egestas. Suspendisse sollicitudin tempor massa eu vulputate. Quisque dolor turpis, dapibus et pulvinar id, pulvinar vel elit. Proin orci tortor, porta sit amet nunc a, mollis suscipit libero. Curabitur finibus felis neque, sit amet viverra quam cursus ut. In mollis, urna eu hendrerit tempor, tortor felis viverra ipsum, at placerat ex magna ut odio. Nam sed dolor eleifend, finibus risus nec, consequat augue.
-                                                </p><p>Donec at consectetur quam. Nulla eu sollicitudin ligula. Quisque elementum dignissim massa eu ultricies. Praesent consectetur elit ut bibendum lacinia. Vivamus posuere eget nisi vel tempus. Suspendisse potenti. Sed sollicitudin nisl et quam porttitor, eget facilisis urna ultrices. Nunc faucibus feugiat magna, eget aliquam lectus placerat facilisis. Phasellus elit lectus, eleifend in dui eu, sodales porta orci.
-                                                </p><p>Suspendisse congue velit vel elit vulputate, at volutpat mauris porta. Donec euismod, massa ut elementum auctor, lectus eros sollicitudin lorem, eu fringilla lectus nisi in leo. Donec tincidunt ligula at purus mollis tincidunt. Fusce aliquam diam vitae nisl tristique venenatis. Morbi quis congue magna, at euismod libero. Etiam condimentum egestas sem ut luctus. Donec fringilla porttitor viverra. Nulla in tellus mauris. Sed tempor auctor dui, nec placerat velit interdum non. Aenean diam enim, molestie sed porttitor sit amet, scelerisque efficitur lectus.</p>                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-3">
-                                <div class="col-lg p-3 shadow rounded">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-1 p-0 py-4" style="font-size: 0.9rem; text-align: center">
-                                                <span>2019</span><br />
-                                                <span>Nov</span><br />
-                                                <span>11</span><br />
-                                            </div>
-                                            <div class="col-lg-11 p-3">
-                                                <h2 class="featurette-heading">討ワ掲供らぱげー嶋出焦まぼ夜引わん乏練なわちご</h2>
-                                                <p class="lead" style="color: purple">討ワ掲供らぱげー嶋出焦まぼ夜引わん乏練なわちご秋川リ遣44府冷勧封6極放なべとも任身アクモ身夫ク第心る余図メミ全衆ス行放しじい河儀ソネ公慣葬付ごフもず。</p>
-                                                <p>旅レぞも楽社暮百ざわの掲崇ヌ奈器ス比見ホラヨ濯強トリレヲ岡稿ち場申破ヨエナ右日クハメリ条局レ州済いつばく投格かなりぐ炎少ナミシ大36侮冗凄レ。安ちぐろを京芸ハヨ強見コロ衛迎情アメ供富ど県後ずふ殺待んちラり鹿1情ぜ計29安陸そゆお代弁んあで判別ハ新特壮憶軒要ぽ。明びわ日達や会真観フ場日メソム自題を院用86芸セケエ容埼ぴばルや明波ヲトアメ早平1辞ろ発増侃リ。</p>
-                                                <p>2身ぽぞよじ変禁つぶせ調講セ就10会深ぴ検能ぽらそド手本べしたぽ先直タモテ備出へじふ部社イ国石だごフぜ皇設ノワソウ軽江昭54科れか体冊鳥お。藤びうクぽ泊写なリと移白チキ幸五ぜう子高ニヤリ水到キニケル極支ぎ掛上メ優動かたにり会3考村ヱ制更カハコ覧達こイ町37庁治ぐをよ稿験るはリ帯魚間立失くだ。</p>
-                                                <p>討ワ掲供らぱげー嶋出焦まぼ夜引わん乏練なわちご秋川リ遣44府冷勧封6極放なべとも任身アクモ身夫ク第心る余図メミ全衆ス行放しじい河儀ソネ公慣葬付ごフもず。盗島ルレエ庫断思郎ぱし蔵9教もこ確5県びトごめ読京名げ当体うぼの栖柔ツ育省へ効向際ゃ。広任ラム法必ラ代周しま優択ふら謙日ヌト値補ノハ合会タ催球6林芸スク聞述激熱信ん。</p>
-                                                <p>江シラ今初フヌセ話億小まそゅぽ行秋局ぽびっこ合40使にるま庫騎ハレツ成田ロオ退違断彩枝雨美たス。然労ヘアワヱ念来ッンへや均固もご国通コセ路議イスヲク意豊るっち思裏到ずろか売同マケ食90町ぐしいで必覧ワツマ柔入宇油代ぼ。可作ヘシフモ次8士ゃ転優マリノレ商権すそなッ人代ラばやと碁複しリもる育島い医辺ゆ可読立ふりねし選45授げトわ。</p>
-                                                <p>戦とでた同文リ聞委で連雄業どけびぞ断農問じえて部呼内五にだ競奈売ケムフテ経強オコウラ更千テヱ人滑で比74愛ねリぴ文升忍曇で。作ア利氷てまり相使ユヲ館時タ害容てまゆべ作玉ドりルリ改止定キ作騒クらはゅ晴52供マオウノ品闘カテナ備春環典嗣つわ。供ぎぶけ紹度ノサフ投8移ヘ給診ヘ止7旅スト金試決へゆ性介ミカマ波4能子角ぽよ暑明づ月由ゃべ盗側太か。</p>
-                                            </div>
-                                        </div>
-                                   </div>
-                                </div>
-                            </div>
-                        {% if posts %}
-                            {% for post in posts %}
-                            <div class="row my-3">
-                                <div class="col-lg p-3 shadow rounded">
-                                    <h2 class="featurette-heading">{{ post.title }}</h2>
-                                    <p class="lead">{{ post.description }}</p>
-                                    <p>{{ post.content }}</p>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        {% endif %}
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-
-            <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-        </div><!-- /.container -->
 {% endblock %}

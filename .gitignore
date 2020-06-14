@@ -1,6 +1,8 @@
+docs/*
 exclusions/*
-**/__pycache__/*
+**/__pycache__
 **/migrations/*
 **/img/*
 *.pptx
 *.xlsx
+setup.py
