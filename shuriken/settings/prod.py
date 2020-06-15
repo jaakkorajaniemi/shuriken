@@ -3,9 +3,16 @@
 import os
 gettext = lambda s: s
 
-SECRET_KEY = 'qB-2Ta6=%RaX%)WeD4r!t%!q-imNW091QQ)7=WoP)!)--bGH=5'
 DEBUG = False
-ALLOWED_HOSTS = []
+
+# Security
+SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY']
+ALLOWED_HOSTS = [os.environ['SHURIKEN_ALLOWED_HOSTS']]
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+# Databases
+CONN_MAX_AGE = None # enable persistent connections; default 0 (terminate at max-life)
 
 # ./shuriken
 # Path to the level with apps/ dir and settings/ dir
@@ -114,7 +121,7 @@ USE_TZ = True
 
 
 # Email
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'DENY' # Sameorigin
 EMAIL_HOST = os.environ['SHURIKEN_EMAIL_HOST']
 EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT']
 EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS']

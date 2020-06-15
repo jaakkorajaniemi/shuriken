@@ -4,6 +4,8 @@ from shuriken.settings.prod import *
 
 DEBUG=True
 
+ALLOWED_HOSTS = []
+
 # Development environment uses different database
 DATABASES = {
     'default': {
