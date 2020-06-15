@@ -88,8 +88,8 @@ TEMPLATES = [
 
 # Languages
 LANGUAGES = [
-    ('ja', 'Japanese'),
-    ('en', 'English'),
+    ('ja', gettext('Japanese')),
+    ('en', gettext('English')),
 ]
 
 # WSGI
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-LANGUAGE_CODE = 'ja'
+LANGUAGE_CODE = 'en'
 TIME_ZONE = 'Japan'
 USE_I18N = True
 USE_L10N = True
