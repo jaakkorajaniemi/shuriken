@@ -2,6 +2,7 @@ docs/*
 exclusions/*
 **/__pycache__
 **/migrations/*
+**/settings/*
 setup.py
 
 *.zip

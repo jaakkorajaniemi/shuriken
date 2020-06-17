@@ -1,11 +1,15 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
+from django.conf import settings
 from .forms import ContactForm
 
 # Create your views here.
 def index(request):
-   return render(request, 'core/index.html')
+   context = {
+      'debug_state': str(settings.DEBUG)
+   }
+   return render(request, 'core/index.html', context)
 
 def contact(request):
    if request.method == 'GET':

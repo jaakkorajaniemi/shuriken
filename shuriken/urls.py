@@ -23,6 +23,8 @@ urlpatterns = [
     path('shurikontrol/', admin.site.urls),
 ]
 
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
 urlpatterns += i18n_patterns(
     path('', include('shuriken.apps.core.urls')),
     path('blog/', include('shuriken.apps.blog.urls')),

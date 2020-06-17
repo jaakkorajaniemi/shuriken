@@ -7,7 +7,7 @@ DEBUG = False
 
 # Security
 SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY']
-ALLOWED_HOSTS = [os.environ['SHURIKEN_ALLOWED_HOSTS']]
+ALLOWED_HOSTS = ['*']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
@@ -24,7 +24,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(PROJECT_APP_ROOT))
 
 # Utility paths
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'files')
-STATICFILES_DIRS = [os.path.join(PROJECT_ROOT, "static"),]
+STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, "static"),)
 LOCALE_PATHS = (os.path.join(PROJECT_ROOT, 'locale'),)
 
 # Apps
