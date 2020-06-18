@@ -5,6 +5,9 @@ gettext = lambda s: s
 
 DEBUG = False
 
+SHURIKEN_DEV_FEATURES = False
+SHURIKEN_VERSION = '0.1'
+
 # Security
 SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY']
 ALLOWED_HOSTS = ['*']
@@ -81,6 +84,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'shuriken.apps.core.context_processors.core'
             ],
         },
     },
@@ -127,3 +131,15 @@ EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT']
 EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS']
 EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_EMAIL_PASSWORD']
 EMAIL_USE_TLS = True
+
+# Databases
+DATABASES = {
+    'default': {
+        'ENGINE': os.environ['SHURIKEN_DB_ENGINE'],
+        'NAME': os.environ['SHURIKEN_DB_NAME'],
+        'USER': os.environ['SHURIKEN_DB_USER'],
+        'PASSWORD': os.environ['SHURIKEN_DB_PASSWORD'],
+        'HOST': os.environ['SHURIKEN_DB_HOST'],
+        'PORT': os.environ['SHURIKEN_DB_PORT'],
+    }
+}

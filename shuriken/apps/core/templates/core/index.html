@@ -10,36 +10,36 @@
     <div class="row">
         <div class="col-lg-4 mb-3">
             <div class="sh-warpbox shadow bg-light rounded">
-                <div class="p-3 mb-2">
+                <div class="sh-warpbox-content">
                     <i class="fa fa-envelope fa-3x" style="color: #032"></i>
-                    <h4 class="mt-1">{{ debug_state }}</h4>
-                    <p class="mb-5">Use this button for inquiries. All business inquiries will be handled confidentially.</p>
+                    <h4>{{ debug_state }}</h4>
+                    <p>Use this button for inquiries. All business inquiries will be handled confidentially.</p>
                 </div>  
-                <div style="position: absolute; bottom: 1rem; width: 100%;">
+                <div class="sh-warpbox-button">
                     <button class="btn btn-info" onclick="window.location.href='/contact';" role="button">{% trans 'Contact form' %} &raquo;</button>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 mb-3">
             <div class="sh-warpbox shadow bg-light rounded">
-                <div class="p-3 mb-2">
+                <div class="sh-warpbox-content">
                     <i class="fa fa-linkedin-square fa-3x" style="color: #032"></i>
-                    <h4 class="mt-1">{% trans 'LinkedIn' %}</h4>
-                    <p class="mb-5">Use this link to access my LinkedIn profile and send a direct message.</p>
+                    <h4>{% trans 'LinkedIn' %}</h4>
+                    <p>Use this link to access my LinkedIn profile and send a direct message.</p>
                 </div>
-                <div style="position: absolute; bottom: 1rem; width: 100%;">
-                    <button class="btn btn-info" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';">{% trans 'Access' %} &raquo;</button>
+                <div class="sh-warpbox-button">
+                    <button class="btn btn-info" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';" role="button">{% trans 'Access' %} &raquo;</button>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 mb-3">
             <div class="sh-warpbox shadow bg-light rounded">
-                <div class="p-3 mb-2">
+                <div class="sh-warpbox-content">
                     <i class="fa fa-quote-right fa-3x" style="color: #bbb"></i><!-- #611 for wine -->
-                    <h4 class="mt-1">{% trans 'Blog' %}</h4>
-                    <p class="mb-5">My blog with insights into Japanese business will be published here once coding is done.</p>
+                    <h4>{% trans 'Blog' %}</h4>
+                    <p>My blog with insights into Japanese business will be published here once coding is done.</p>
                 </div>
-                <div style="position: absolute; bottom: 1rem; width: 100%;">
+                <div class="sh-warpbox-button">
                     <button class="btn btn-secondary" role="button" disabled>{% trans 'Read' %} &raquo;</button>
                 </div>
             </div>
