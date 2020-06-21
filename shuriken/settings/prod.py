@@ -6,12 +6,29 @@ gettext = lambda s: s
 
 DEBUG = False
 
-SHURIKEN_DEV_FEATURES = os.environ['SHURIKEN_DEV_FEATURES'] if os.environ['SHURIKEN_DEV_FEATURES'] is not None else False
-SHURIKEN_MULTILANGUAGE = os.environ['SHURIKEN_MULTILANGUAGE'] if os.environ['SHURIKEN_MULTILANGUAGE'] is not None else False
+try:
+    SHURIKEN_ENVVAR_TEST= os.environ['SHURIKEN_KEY_TEST']
+except KeyError:
+    SHURIKEN_ENVVAR_TEST = 'This test variable was not set and Shuriken autoloaded it.'
+
+try:
+    SHURIKEN_DEV_FEATURES = strtobool(os.environ['SHURIKEN_DEV_FEATURES'])
+except KeyError:
+    SHURIKEN_DEV_FEATURES = False
+
+try:
+    SHURIKEN_MULTILANGUAGE = strtobool(os.environ['SHURIKEN_MULTILANGUAGE'])
+except KeyError:
+    SHURIKEN_MULTILANGUAGE = False
+
+try:
+    SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY']
+except KeyError:
+    'aBx52Xa-7ZhqQ69Z1YsT2462--41%z(00tRa6Xb7-2$R--)1bHXQe'
+
 SHURIKEN_VERSION = '0.1'
 
 # Security
-SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY'] if os.environ['SHURIKEN_SECRET_KEY'] is not None else 'aBx52Xa-7ZhqQ69Z1YsT2462--41%z(00tRa6Xb7-2$R--)1bHXQe'
 ALLOWED_HOSTS = ['*']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
