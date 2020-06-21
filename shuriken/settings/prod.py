@@ -6,8 +6,8 @@ gettext = lambda s: s
 
 DEBUG = False
 
-SHURIKEN_DEV_FEATURES = strtobool(os.environ['SHURIKEN_DEV_FEATURES']) if os.environ['SHURIKEN_DEV_FEATURES'] is not None else False
-SHURIKEN_MULTILANGUAGE = strtobool(os.environ['SHURIKEN_MULTILANGUAGE']) if os.environ['SHURIKEN_DEV_FEATURES'] is not None else False
+SHURIKEN_DEV_FEATURES = os.environ['SHURIKEN_DEV_FEATURES'] if os.environ['SHURIKEN_DEV_FEATURES'] is not None else False
+SHURIKEN_MULTILANGUAGE = os.environ['SHURIKEN_MULTILANGUAGE'] if os.environ['SHURIKEN_MULTILANGUAGE'] is not None else False
 SHURIKEN_VERSION = '0.1'
 
 # Security
