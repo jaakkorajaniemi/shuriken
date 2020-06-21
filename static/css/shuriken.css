@@ -173,12 +173,15 @@ h1, h2, h3, h4, h5, h6 {
   object-position: 65% 0px;
 }
 
-#sh-section-header .inner .item .bar {
+#sh-section-header .inner .item .sh-bar {
   position: absolute;
   bottom: 0;
   height: 1rem;
   width: 100%;
   background: rgba(0,0,0,0.2);
+  font-size: 0.6rem;
+  text-align: right;
+  color: rgba(255,255,255,0.8);
 }
 
 #sh-section-header .inner .item #particles-js {
