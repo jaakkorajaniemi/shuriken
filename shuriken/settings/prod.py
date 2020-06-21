@@ -5,7 +5,8 @@ gettext = lambda s: s
 
 DEBUG = False
 
-SHURIKEN_DEV_FEATURES = False
+SHURIKEN_DEV_FEATURES = os.environ['SHURIKEN_DEV_FEATURES']
+SHURIKEN_MULTILANGUAGE = os.environ['SHURIKEN_MULTILANGUAGE']
 SHURIKEN_VERSION = '0.1'
 
 # Security
@@ -90,11 +91,7 @@ TEMPLATES = [
     },
 ]
 
-# Languages
-LANGUAGES = [
-    ('ja', gettext('Japanese')),
-    ('en', gettext('English')),
-]
+
 
 # WSGI
 WSGI_APPLICATION = 'shuriken.wsgi.application'
@@ -117,7 +114,20 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-LANGUAGE_CODE = 'en'
+# Languages
+if SHURIKEN_MULTILANGUAGE:
+    LANGUAGE_CODE = 'en'    
+    LANGUAGES = [
+        ('ja', gettext('Japanese')),
+        ('en', gettext('English')),
+    ]
+
+else:
+    LANGUAGE_CODE = 'en'
+    LANGUAGES = [
+        ('en', gettext('English')),
+    ]
+    
 TIME_ZONE = 'Japan'
 USE_I18N = True
 USE_L10N = True

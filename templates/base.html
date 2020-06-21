@@ -30,49 +30,76 @@
   <!-- Core css settings will determine font using body language code -->
   <body lang="{{ request.LANGUAGE_CODE }}">
     <header>
-        <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
-            <a class="navbar-brand" href="#">■</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">{% trans 'Home' %}</a>
-                    </li>
-                    {% if SHURIKEN_DEV_FEATURES %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="/book">{% trans 'Book' %}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/resources">{% trans 'Resources' %}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">{% trans 'Blog' %}</a>
-                    </li>
-                    <li class="nav-item disabled">
-                        <a class="nav-link disabled" href="#">|</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/en">English</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ja">日本語</a>
-                    </li>
-                    {% endif %}
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item navbar-brand">
-                      <a href="https://www.facebook.com/jaakkor" target="_blank"><i class="fa fa-facebook-official" style="color: #33a"></i></a>
-                    </li>
-                    <li class="nav-item navbar-brand">
-                      <a href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank"><i class="fa fa-linkedin-square" style="color: #47e"></i></a>
-                    </li>
-                    <li class="nav-item navbar-brand">
-                        {% block LOGO_IMG %}<img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}">{% endblock %}
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-full">
+          <!-- Visual element -->
+          <a class="navbar-brand" href="#">
+            ■
+          </a>
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">{% trans 'Home' %}</a>
+              </li>
+              {% if SHURIKEN_DEV_FEATURES %}
+              <li class="nav-item">
+                  <a class="nav-link" href="/book">{% trans 'Book' %}</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/resources">{% trans 'Resources' %}</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/blog">{% trans 'Blog' %}</a>
+              </li>
+              {% endif %}
+          </ul>
+
+          <!-- Logo and social media -->
+          <a class="navbar-brand" href="https://www.facebook.com/jaakkor" target="_blank">
+            <i class="fa fa-facebook-official" style="color: #33a"></i>
+          </a>
+          <a class="navbar-brand" href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank">
+            <i class="fa fa-linkedin-square" style="color: #47e"></i>
+          </a>
+          <a class="navbar-brand" href="#"><img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a></img>
+        </nav>
+
+        <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-mobile">
+          <!-- Logo and social media -->
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a>
+          </a>
+          <a class="navbar-brand" href="https://www.facebook.com/jaakkor" target="_blank">
+            <i class="fa fa-facebook-official" style="color: #33a"></i>
+          </a>
+          <a class="navbar-brand mr-auto" href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank">
+            <i class="fa fa-linkedin-square" style="color: #47e"></i>
+          </a>
+
+          <!-- Collapsible button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible links -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">{% trans 'Home' %}</a>
+              </li>
+              {% if SHURIKEN_DEV_FEATURES %}
+              <li class="nav-item">
+                  <a class="nav-link" href="/book">{% trans 'Book' %}</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/resources">{% trans 'Resources' %}</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/blog">{% trans 'Blog' %}</a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
         </nav>
 
 

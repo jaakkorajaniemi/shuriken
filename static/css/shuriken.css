@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 
   width: 268px;
   object-fit: cover;
-  object-position: 60% 0px;
+  object-position: 65% 0px;
 }
 
 #sh-section-header .inner .item .bar {
@@ -228,15 +228,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+
+  #sh-nav-mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+}
+
 /* Mobile-specific layout and style exceptions */
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 
-  .cropped1 {
-    width: 200px; /* width of container */
-    height: 200px; /* height of container */
-    object-fit: cover;
-    border: 5px solid black;
+  #sh-nav-full {
+    display: none;
+    visibility: hidden;
   }
 
   .sh-warpbox {
