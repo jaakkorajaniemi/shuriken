@@ -189,10 +189,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #sh-section-header .inner .item .feature {
-  background: rgba(245,240,235,0.5);
+  background: rgba(245,240,235,0.8);
   padding: 10px;
   margin-bottom: 2rem;
-  max-width: 25rem;
+  max-width: 20rem;
 }
 
 #sh-section-header .inner .item .feature p {
@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-weight: 400;
   line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 #sh-section-header .inner .item .feature h2 {
@@ -225,6 +226,12 @@ h1, h2, h3, h4, h5, h6 {
   text-orientation: upright;
   text-transform: full-width;
   line-height: 1rem;
+}
+
+.sh-meet img {
+  position: absolute;
+  top: -25px;
+  left: 10px;
 }
 
 @media only screen and (min-width: 768px) {

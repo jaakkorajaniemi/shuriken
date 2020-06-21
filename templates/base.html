@@ -120,12 +120,15 @@
                                 <div style="clear: both"></div>
                             </div> 
                             {% else %}
-                            <div class="feature rounded">
+                            <div class="feature rounded my-4">
                                 {% block HEADER_TEXT %}
-                                <p>My name is Jaakko Rajaniemi, I am an experienced hands-on Japan market entry growth consultant specialized in startups and large corporation partnerships.</p>
-                                <p class="mb-0">Born and raised in Helsinki with a strong background in programming and interest in culture, travel and lifestyle.</p>
+                                <p>I am an experienced Japan market entry and innovation consultant specialized in startups and large corporation partnerships.</p>
+                                <p class="mb-0">Born in Helsinki and living in Tokyo with a background in programming and intercultural management.</p>
                                 {% endblock %}
-                            </div> 
+                            </div>
+                            <div class="sh-meet">
+                              <img src="{% static 'img/meet.png' %}" alt="Meet Jaakko Rajaniemi" width="223" height="60">
+                            </div>
                             {% endif %}
                             {% block HEADER_BUTTONS %}
                             <button class="btn btn-md btn-info" onclick="window.location.href='/contact';">{% trans 'Request a meeting' %} &raquo;</button>
