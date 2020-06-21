@@ -6,12 +6,12 @@ gettext = lambda s: s
 
 DEBUG = False
 
-SHURIKEN_DEV_FEATURES = strtobool(os.environ['SHURIKEN_DEV_FEATURES'])
-SHURIKEN_MULTILANGUAGE = strtobool(os.environ['SHURIKEN_MULTILANGUAGE'])
+SHURIKEN_DEV_FEATURES = strtobool(os.environ['SHURIKEN_DEV_FEATURES']) if os.environ['SHURIKEN_DEV_FEATURES'] is not None else False
+SHURIKEN_MULTILANGUAGE = strtobool(os.environ['SHURIKEN_MULTILANGUAGE']) if os.environ['SHURIKEN_DEV_FEATURES'] is not None else False
 SHURIKEN_VERSION = '0.1'
 
 # Security
-SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY']
+SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY'] if os.environ['SHURIKEN_SECRET_KEY'] is not None else 'aBx52Xa-7ZhqQ69Z1YsT2462--41%z(00tRa6Xb7-2$R--)1bHXQe'
 ALLOWED_HOSTS = ['*']
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
@@ -137,20 +137,20 @@ USE_TZ = True
 
 # Email
 X_FRAME_OPTIONS = 'DENY' # Sameorigin
-EMAIL_HOST = os.environ['SHURIKEN_EMAIL_HOST']
-EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT']
-EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS']
-EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_EMAIL_PASSWORD']
+EMAIL_HOST = os.environ['SHURIKEN_EMAIL_HOST'] if os.environ['SHURIKEN_EMAIL_HOST'] is not None else 'error'
+EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT'] if os.environ['SHURIKEN_EMAIL_PORT'] is not None else 'error'
+EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS'] if os.environ['SHURIKEN_EMAIL_ADDRESS'] is not None else 'error'
+EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_EMAIL_PASSWORD'] if os.environ['SHURIKEN_EMAIL_PASSWORD'] is not None else 'error'
 EMAIL_USE_TLS = True
 
 # Databases
 DATABASES = {
     'default': {
-        'ENGINE': os.environ['SHURIKEN_DB_ENGINE'],
-        'NAME': os.environ['SHURIKEN_DB_NAME'],
-        'USER': os.environ['SHURIKEN_DB_USER'],
-        'PASSWORD': os.environ['SHURIKEN_DB_PASSWORD'],
-        'HOST': os.environ['SHURIKEN_DB_HOST'],
-        'PORT': os.environ['SHURIKEN_DB_PORT'],
+        'ENGINE': os.environ['SHURIKEN_DB_ENGINE'] if os.environ['SHURIKEN_DB_ENGINE'] is not None else 'error',
+        'NAME': os.environ['SHURIKEN_DB_NAME'] if os.environ['SHURIKEN_DB_NAME'] is not None else 'error',
+        'USER': os.environ['SHURIKEN_DB_USER'] if os.environ['SHURIKEN_DB_USER'] is not None else 'error',
+        'PASSWORD': os.environ['SHURIKEN_DB_PASSWORD'] if os.environ['SHURIKEN_DB_PASSWORD'] is not None else 'error',
+        'HOST': os.environ['SHURIKEN_DB_HOST'] if os.environ['SHURIKEN_DB_HOST'] is not None else 'error',
+        'PORT': os.environ['SHURIKEN_DB_PORT'] if os.environ['SHURIKEN_DB_PORT'] is not None else 'error',
     }
 }
