@@ -229,18 +229,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 768px) {
 
-  #sh-nav-mobile {
+  .sh-mobile-only {
     visibility: hidden;
     display: none;
   }
-
 }
 
 /* Mobile-specific layout and style exceptions */
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 
-  #sh-nav-full {
+  .sh-desktop-only {
     display: none;
     visibility: hidden;
   }

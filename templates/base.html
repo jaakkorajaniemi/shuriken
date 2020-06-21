@@ -30,7 +30,7 @@
   <!-- Core css settings will determine font using body language code -->
   <body lang="{{ request.LANGUAGE_CODE }}">
     <header>
-        <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-full">
+        <nav class="sh-desktop-only navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-full">
           <!-- Visual element -->
           <a class="navbar-brand" href="#">
             ■
@@ -64,7 +64,7 @@
           <a class="navbar-brand" href="#"><img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a></img>
         </nav>
 
-        <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-mobile">
+        <nav class="sh-mobile-only navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
           <!-- Logo and social media -->
           <a class="navbar-brand" href="#">
             <img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a>
