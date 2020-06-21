@@ -49,7 +49,7 @@ except KeyError:
 try:
     SHURIKEN_DB_ENGINE = os.environ['SHURIKEN_DB_ENGINE']
 except KeyError:
-    SHURIKEN_DB_ENGINE = 'Environment variable could not be found (DB_ENGINE)'
+    SHURIKEN_DB_ENGINE = 'django.db.backends.postgresql_psycopg2'
 
 try:
     SHURIKEN_DB_NAME = os.environ['SHURIKEN_DB_NAME']
