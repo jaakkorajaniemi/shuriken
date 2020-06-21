@@ -1,12 +1,13 @@
 # Shuriken product environment settings
 
 import os
+from distutils.util import strtobool
 gettext = lambda s: s
 
 DEBUG = False
 
-SHURIKEN_DEV_FEATURES = os.environ['SHURIKEN_DEV_FEATURES']
-SHURIKEN_MULTILANGUAGE = os.environ['SHURIKEN_MULTILANGUAGE']
+SHURIKEN_DEV_FEATURES = strtobool(os.environ['SHURIKEN_DEV_FEATURES'])
+SHURIKEN_MULTILANGUAGE = strtobool(os.environ['SHURIKEN_MULTILANGUAGE'])
 SHURIKEN_VERSION = '0.1'
 
 # Security
