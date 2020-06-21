@@ -24,7 +24,58 @@ except KeyError:
 try:
     SECRET_KEY = os.environ['SHURIKEN_SECRET_KEY']
 except KeyError:
-    'aBx52Xa-7ZhqQ69Z1YsT2462--41%z(00tRa6Xb7-2$R--)1bHXQe'
+    SECRET_KEY = 'aBx52Xa-7ZhqQ69Z1YsT2462--41%z(00tRa6Xb7-2$R--)1bHXQe'
+
+try:
+    EMAIL_HOST = os.environ['SHURIKEN_EMAIL_HOST']
+except KeyError:
+    EMAIL_HOST = 'Environment variable could not be found (EMAIL_HOST)'
+
+try:
+    EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT']
+except KeyError:
+    EMAIL_PORT = 'Environment variable could not be found (EMAIL_PORT)'
+
+try:
+    EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS']
+except KeyError:
+    EMAIL_HOST_USER = 'Environment variable could not be found (EMAIL_ADDRESS)'
+
+try:
+    EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_EMAIL_PASSWORD']
+except KeyError:
+    EMAIL_HOST_PASSWORD = 'Environment variable could not be found'
+
+try:
+    SHURIKEN_DB_ENGINE = os.environ['SHURIKEN_DB_ENGINE']
+except KeyError:
+    SHURIKEN_DB_ENGINE = 'Environment variable could not be found (DB_ENGINE)'
+
+try:
+    SHURIKEN_DB_NAME = os.environ['SHURIKEN_DB_NAME']
+except KeyError:
+    SHURIKEN_DB_NAME = 'Environment variable could not be found (DB_NAME)'
+
+try:
+    SHURIKEN_DB_USER = os.environ['SHURIKEN_DB_USER']
+except KeyError:
+    SHURIKEN_DB_USER = 'Environment variable could not be found (DB_USER)'
+
+try:
+    SHURIKEN_DB_PASSWORD = os.environ['SHURIKEN_DB_PASSWORD']
+except KeyError:
+    SHURIKEN_DB_PASSWORD = 'Environment variable could not be found (DB_PASSWORD)'
+
+try:
+    SHURIKEN_DB_HOST = os.environ['SHURIKEN_DB_HOST']
+except KeyError:
+    SHURIKEN_DB_HOST = 'Environment variable could not be found (DB_HOST)'
+
+try:
+    SHURIKEN_DB_PORT = os.environ['SHURIKEN_DB_PORT']
+except KeyError:
+    SHURIKEN_DB_PORT = 'Environment variable could not be found (DB_PORT)'
+
 
 SHURIKEN_VERSION = '0.1'
 
@@ -154,20 +205,16 @@ USE_TZ = True
 
 # Email
 X_FRAME_OPTIONS = 'DENY' # Sameorigin
-EMAIL_HOST = os.environ['SHURIKEN_EMAIL_HOST'] if os.environ['SHURIKEN_EMAIL_HOST'] is not None else 'error'
-EMAIL_PORT = os.environ['SHURIKEN_EMAIL_PORT'] if os.environ['SHURIKEN_EMAIL_PORT'] is not None else 'error'
-EMAIL_HOST_USER = os.environ['SHURIKEN_EMAIL_ADDRESS'] if os.environ['SHURIKEN_EMAIL_ADDRESS'] is not None else 'error'
-EMAIL_HOST_PASSWORD = os.environ['SHURIKEN_EMAIL_PASSWORD'] if os.environ['SHURIKEN_EMAIL_PASSWORD'] is not None else 'error'
 EMAIL_USE_TLS = True
 
 # Databases
 DATABASES = {
     'default': {
-        'ENGINE': os.environ['SHURIKEN_DB_ENGINE'] if os.environ['SHURIKEN_DB_ENGINE'] is not None else 'error',
-        'NAME': os.environ['SHURIKEN_DB_NAME'] if os.environ['SHURIKEN_DB_NAME'] is not None else 'error',
-        'USER': os.environ['SHURIKEN_DB_USER'] if os.environ['SHURIKEN_DB_USER'] is not None else 'error',
-        'PASSWORD': os.environ['SHURIKEN_DB_PASSWORD'] if os.environ['SHURIKEN_DB_PASSWORD'] is not None else 'error',
-        'HOST': os.environ['SHURIKEN_DB_HOST'] if os.environ['SHURIKEN_DB_HOST'] is not None else 'error',
-        'PORT': os.environ['SHURIKEN_DB_PORT'] if os.environ['SHURIKEN_DB_PORT'] is not None else 'error',
+        'ENGINE': SHURIKEN_DB_ENGINE,
+        'NAME': SHURIKEN_DB_NAME,
+        'USER': SHURIKEN_DB_USER,
+        'PASSWORD': SHURIKEN_DB_PASSWORD,
+        'HOST': SHURIKEN_DB_HOST,
+        'PORT': SHURIKEN_DB_PORT,
     }
 }
