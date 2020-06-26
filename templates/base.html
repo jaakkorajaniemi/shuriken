@@ -19,6 +19,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah:wght@400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro+Ultra+Light" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro" rel="stylesheet" type="text/css"/>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7f54fa9b37.js"></script>
@@ -30,7 +32,7 @@
   <!-- Core css settings will determine font using body language code -->
   <body lang="{{ request.LANGUAGE_CODE }}">
     <header>
-        <nav class="sh-desktop-only navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-full">
+        <nav class="sh-desktop-only navbar shadow navbar-expand-md navbar-dark fixed-top bg-dark" id="sh-nav-full">
           <!-- Visual element -->
           <a class="navbar-brand" href="#">
             ■
@@ -56,24 +58,24 @@
 
           <!-- Logo and social media -->
           <a class="navbar-brand" href="https://www.facebook.com/jaakkor" target="_blank">
-            <i class="fa fa-facebook-official" style="color: #33a"></i>
+            <i class="fa fa-facebook-square" style="color: #fff"></i>
           </a>
           <a class="navbar-brand" href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank">
-            <i class="fa fa-linkedin-square" style="color: #47e"></i>
+            <i class="fa fa-linkedin-square" style="color: #fff"></i>
           </a>
           <a class="navbar-brand" href="#"><img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a></img>
         </nav>
 
-        <nav class="sh-mobile-only navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
+        <nav class="sh-mobile-only navbar shadow navbar-expand-md navbar-dark fixed-top bg-dark">
           <!-- Logo and social media -->
           <a class="navbar-brand" href="#">
             <img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a>
           </a>
           <a class="navbar-brand" href="https://www.facebook.com/jaakkor" target="_blank">
-            <i class="fa fa-facebook-official" style="color: #33a"></i>
+            <i class="fa fa-facebook-official" style="color: #fff"></i>
           </a>
           <a class="navbar-brand mr-auto" href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank">
-            <i class="fa fa-linkedin-square" style="color: #47e"></i>
+            <i class="fa fa-linkedin-square" style="color: #fff"></i>
           </a>
 
           <!-- Collapsible button -->
@@ -108,8 +110,12 @@
         <div class="inner">
             <div class="item active">
 
-                {% block BANNER_IMG %}<img src="{% static 'img/header01.jpg' %}" class="img-responsive" alt="{% trans 'Banner image' %}">{% endblock %}
-                <div id="particles-js"></div>
+                {% block BANNER_IMG %}
+                  <img class="primary" src="{% static 'img/header01.jpg' %}" class="img-responsive" alt="{% trans 'Banner image' %}">
+                  <img class="overlay" src="{% static 'img/header01-overlay.png' %}">
+                {% endblock %}
+
+                <div id="particles-js-disabled"></div>
                 
                 <div class="container">
                     <div class="row">
@@ -120,18 +126,25 @@
                                 <div style="clear: both"></div>
                             </div> 
                             {% else %}
-                            <div class="feature rounded my-4">
+                            <div class="feature rounded">
                                 {% block HEADER_TEXT %}
-                                <p>I am an experienced Japan market entry and innovation consultant specialized in startups and large corporation partnerships.</p>
-                                <p class="mb-0">Born in Helsinki and living in Tokyo with a background in programming and intercultural management.</p>
+                                <p>Hello, I'm</p>
+                                <h2>Jaakko <span style="color: #911">Rajaniemi</span></h2>
+                                <p>
+                                  <ul>
+                                    <li>A startup and innovation consultant</li>
+                                    <li>Japan market entry specialist</li>
+                                  </ul>
+                                </p>
+                                <p class="mb-0">Born in Helsinki, living in Tokyo.</p>
                                 {% endblock %}
                             </div>
                             <div class="sh-meet">
-                              <img src="{% static 'img/meet.png' %}" alt="Meet Jaakko Rajaniemi" width="223" height="60">
+                              <!--img src="{% static 'img/meet.png' %}" alt="Meet Jaakko Rajaniemi" width="223" height="60"-->
                             </div>
                             {% endif %}
                             {% block HEADER_BUTTONS %}
-                            <button class="btn btn-md btn-info" onclick="window.location.href='/contact';">{% trans 'Request a meeting' %} &raquo;</button>
+                            <button class="btn btn-md btn-wine" onclick="window.location.href='/contact';">{% trans 'Request a meeting' %} &raquo;</button>
                             {% endblock %}
                         </div>
                     </div>
@@ -174,7 +187,7 @@
             }
           },
           "color": {
-            "value": "#751"
+            "value": "#ddd"
           },
           "shape": {
             "type": "circle",
