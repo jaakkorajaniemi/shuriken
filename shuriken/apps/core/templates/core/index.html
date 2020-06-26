@@ -11,21 +11,21 @@
         <div class="col-lg-4 mb-3">
             <div class="sh-warpbox shadow bg-light rounded">
                 <div class="sh-warpbox-content">
-                    <i class="fa fa-envelope fa-3x" style="color: #057"></i>
-                    <h4>Contact</h4>
-                    <p>Use this button for inquiries. All business inquiries will be handled confidentially.</p>
+                    <i class="fa fa-book fa-3x" style="color: #057"></i>
+                    <h4>Book</h4>
+                    <p class="pb-1">Make a deep dive into the history, structure, culture and entry mechanics of the Japanese startup ecosystem.</p>
                 </div>  
                 <div class="sh-warpbox-button">
-                    <button class="btn btn-blue" onclick="window.location.href='/contact';" role="button">{% trans 'Contact form' %} &raquo;</button>
+                    <button class="btn btn-blue" onclick="window.location.href='/contact';" role="button">{% trans 'Read' %} &raquo;</button>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 mb-3">
             <div class="sh-warpbox shadow bg-light rounded">
                 <div class="sh-warpbox-content">
-                    <i class="fa fa-linkedin-square fa-3x" style="color: #057"></i>
-                    <h4>{% trans 'LinkedIn' %}</h4>
-                    <p>Use this link to access my LinkedIn profile and send a direct message.</p>
+                    <i class="fa fa-file fa-3x" style="color: #057"></i>
+                    <h4>Resources</h4>
+                    <p>Access complementary resources related to the book, including cultural frameworks and market entry models.</p>
                 </div>
                 <div class="sh-warpbox-button">
                     <button class="btn btn-blue" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';" role="button">{% trans 'Access' %} &raquo;</button>
@@ -47,20 +47,35 @@
     </div>
 
     <div class="sh-mobile-only">
-        <div class="d-flex bg-light mb-2 rounded">
-            <div class="p-2 d-flex align-items-center"><i class="fa fa-envelope-square fa-2x" style="color: #bbb"></i></div>
-            <div class="p-2 flex-grow-1 d-flex align-items-center"><small>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</small></div>
-            <div class="p-2 ml-auto d-flex align-items-center justify-content-center" style="width: 100px;"><button class="btn btn-sm btn-info" role="button" disabled>{% trans 'Contact' %} &raquo;</button></div>
-        </div>
-        <div class="d-flex bg-light mb-2 rounded">
-            <div class="p-2 d-flex align-items-center"><i class="fa fa-linkedin-square fa-2x" style="color: #bbb"></i></div>
-            <div class="p-2 flex-grow-1 d-flex align-items-center"><small>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</small></div>
-            <div class="p-2 ml-auto d-flex align-items-center justify-content-center" style="width: 100px;"><button class="btn btn-sm btn-info" role="button" disabled>{% trans 'Access' %} &raquo;</button></div>
-        </div>
-        <div class="d-flex bg-light mb-2 rounded">
-            <div class="p-2 d-flex align-items-center"><i class="fa fa-linkedin-square fa-2x" style="color: #bbb"></i></div>
-            <div class="p-2 flex-grow-1 d-flex align-items-center"><small>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.</small></div>
-            <div class="p-2 ml-auto d-flex align-items-center justify-content-center" style="width: 100px;"><button class="btn btn-sm btn-secondary" role="button" disabled>{% trans 'Read' %} &raquo;</button></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg mx-auto">
+                    <div class="sh-businesscard d-flex bd-highlight rounded-lg shadow" style="min-height: 200px; min-width: 430px">
+                        <div class="flex-column flex-grow-1">
+                            <div class="pt-4 pl-4 bd-highlight">
+                                <span style="font-family: 'Sofia Pro'; font-size: 1.3rem; font-weight: 500">Jaakko Rajaniemi</span><br />
+                                <span style="font-weight: 500;">Innovation Solutions Division<br />
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex-column">
+                            <div class="pt-4 pr-4 bd-highlight">
+                                <span style="font-weight: 500;">Deloitte Tohmatsu<br />
+                                Venture Support Co., Ltd.<br /></span>
+                                PCPM Building<br />
+                                1-11-1 Marunouchi<br />
+                                Chiyoda-ku, Tokyo 100-6211<br />
+                                Japan<br />
+                            </div>
+                            <div class="pb-4 pr-4 pt-4 bd-highlight">
+                                Member of<br />
+                                <span style="font-weight: 500;">
+                                    Deloitte Touche Tohmatsu Limited<br /></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -70,23 +85,23 @@
         <div class="container sh-experience">
             <div class="row">
                 <div class="col-lg">
-                    <h2 class="featurette-heading">{% trans 'Professional experience' %}</h2>
+                    <h2>Professional experience</h2>
                     <p class="light">
-                        I currently work as a Global Innovation Consultant for <a href="https://www2.deloitte.com/jp/en/pages/about-deloitte/articles/dtvs/dtvs.html" target="_blank" rel="noopener">Deloitte Tohmatsu Venture Support</a> (Tokyo),
-                        where I provide direct startup mentorship, advise Fortune 500 corporations on startup co-innovation,
-                        and provide public sector startup advisory for ministries and local governments. Before Deloitte, I was an 
-                        organizer at <a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a> and <a href="https://www.techinasia.com/" target="_blank" rel="noopener">Tech in Asia</a>. I am a <a href="https://www.pmi.org/certifications/types/certified-associate-capm" target="_blank" rel="noopener">Certified Associate of Project Management (CAPM)®</a>, 
-                        a member of the <a href="http://www.fccj.or.jp/" target="_blank" rel="noopener">Finnish Chamber of Commerce Japan</a>, and business-proficient in English, Japanese (<a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank" rel="noopener">N1</a>) and Finnish languages.
+                        I am a Global Innovation Consultant at <a href="https://www2.deloitte.com/jp/en/pages/about-deloitte/articles/dtvs/dtvs.html" target="_blank" rel="noopener">Deloitte Tohmatsu Venture Support</a>,
+                        engaged in direct startup advisory, corporate co-creation, and
+                        public sector startup initiatives. Before Deloitte, I was an 
+                        organizer of <a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a> and <a href="https://www.techinasia.com/" target="_blank" rel="noopener">Tech in Asia</a>. I am a <a href="https://www.pmi.org/certifications/types/certified-associate-capm" target="_blank" rel="noopener">Certified Associate of Project Management (CAPM)®</a>, a full-stack web-developer, 
+                        a member of the <a href="http://www.fccj.or.jp/" target="_blank" rel="noopener">Finnish Chamber of Commerce Japan</a>, and business-proficient in English, Japanese (<a href="https://www.jlpt.jp/e/about/levelsummary.html" target="_blank" rel="noopener">JLPT N1</a>) and Finnish.
                     </p>
                 </div>
             </div>
             <hr class="sh-divider-blank">
             <div class="row">
                 <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
-                    <i class="fa fa-globe fa-3x pb-2" style="color: #357"></i>
+                    <i class="fa fa-globe fa-3x pb-2" style="color: #000"></i>
                 </div>
                 <div class="col-lg my-auto">
-                    <h3>{% trans 'Case examples - Direct startup growth advisory' %}</h3>
+                    <h3>Startups</h3>
                     <ul>
                         <li>Operational support and Japan entry PMO for an European startup with over €50 million in total investment.</li>
                         <li>Mentor for a Japanese consumer app startup in a government-sponsored startup acceleration program.</li>
@@ -96,10 +111,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
-                    <i class="fa fa-briefcase fa-3x pb-2" style="color: #223"></i>
+                    <i class="fa fa-briefcase fa-3x pb-2" style="color: #000"></i>
                 </div>
                 <div class="col-lg my-auto">
-                    <h3>{% trans 'Case examples - Corporate co-innovation advisory' %}</h3>
+                    <h3>Large corporations</h3>
                     <ul>
                         <li>Performed business needs analysis for a corporation and listed 100 startups as collaboration candidates.</li>
                         <li>Conducted qualitative due diligence on a multi-million venture capital investment in real estate industry.</li>
@@ -109,10 +124,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
-                    <i class="fa fa-seedling fa-3x pb-2" style="color: #055"></i>
+                    <i class="fa fa-seedling fa-3x pb-2" style="color: #000"></i>
                 </div>
                 <div class="col-lg my-auto">
-                    <h3>{% trans 'Case examples - Public sector startup advisory' %}</h3>
+                    <h3>Public sector</h3>
                     <ul>
                         <li>Invited over 190 global startups to Japan and matched them with over 200 Japanese large corporations.</li>
                         <li>Conducted foreign startup ecosystem research in the Nordic countries and Russia for a local ministry.</li>
@@ -182,11 +197,11 @@
 
     <hr class="sh-divider">
 
-    <div class="row featurette">
-        <div class="container abilities">
+    <div class="row">
+        <div class="container sh-abilities">
             <div class="row">
                 <div class="col-lg">
-                    <h2 class="featurette-heading">{% trans 'Technical abilities' %}</span></h2>
+                    <h2>{% trans 'Technical abilities' %}</span></h2>
                 </div>
             </div>
             <hr class="sh-divider-blank">

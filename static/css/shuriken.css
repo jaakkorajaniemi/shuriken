@@ -1,6 +1,10 @@
 /*
  * Shuriken v0.1 Core CSS
  */
+ @font-face {font-family: "Sofia Pro Ultra Light"; src: url("//db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.eot"); src: url("//db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.woff") format("woff"), url("//db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.svg#Sofia Pro") format("svg"); }
+ @font-face {font-family: "Sofia Pro Extra Light"; src: url("//db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.eot"); src: url("//db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.woff") format("woff"), url("//db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.svg#Sofia Pro") format("svg"); }
+ @font-face {font-family: "Sofia Pro"; src: url("//db.onlinewebfonts.com/t/9126ab31ea89886fdf039582d99d9bde.eot"); src: url("//db.onlinewebfonts.com/t/9126ab31ea89886fdf039582d99d9bde.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9126ab31ea89886fdf039582d99d9bde.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9126ab31ea89886fdf039582d99d9bde.woff") format("woff"), url("//db.onlinewebfonts.com/t/9126ab31ea89886fdf039582d99d9bde.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9126ab31ea89886fdf039582d99d9bde.svg#Sofia Pro") format("svg"); }
+ @font-face {font-family: "Sofia Pro Light"; src: url("//db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.eot"); src: url("//db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.woff") format("woff"), url("//db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.svg#Sofia Pro") format("svg"); }
 
 /* TAGS */
 body {
@@ -104,12 +108,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sh-warpbox-content p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-bottom: 2.5rem;
+  font-family: 'Sofia Pro Light', Tahoma, serif;
 }
 
 .sh-warpbox-content h4 {
   margin-top: 0.3rem;
+  font-family: 'Sofia Pro', Tahoma, serif;
 }
 
 .sh-warpbox-button {
@@ -120,11 +126,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .sh-experience p {
   font-size: 1.1em;
+  font-family: 'Sofia Pro Light', Tahoma, sans;
+}
+.sh-experience h2, .sh-abilities h2 {
+  font-family: 'Sofia Pro', Tahoma, sans;
 }
 
 .sh-experience h3 {
+  font-family: 'Sofia Pro Light', Tahoma, sans;
   font-size: 1.4em;
   font-weight: 300;
+}
+
+.sh-experience ul li {
+  font-family: 'Sofia Pro Light', Tahoma, sans;
 }
 
 .sh-experience figure {
@@ -140,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sh-experience .feature {
-  background: rgba(245,240,235,1);
+  background: rgba(245,245,245,1);
   padding: 10px;
   width: 100%;
   font-size: 0.9rem;
@@ -150,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Gloria Hallelujah', Tahoma, sans-serif;
   color: #000;
   font-weight: 400;
+  line-height: 1.7rem;
 }
 
 .sh-experience input[type='text'] {
@@ -162,6 +178,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .sh-experience form label {
   font-weight: 500;
+}
+
+.sh-businesscard {
+  font-size: 0.7rem;
+  border: 1px solid #aaa;
 }
 
 /* SECTIONS */
@@ -224,6 +245,10 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   width: 40rem;
   height: 25rem;
+}
+
+#sh-section-header .inner .item .button {
+  font-family: 'Sofia Pro', sans-serif;
 }
 
 #sh-section-header .inner .item .feature {
@@ -301,6 +326,10 @@ h1, h2, h3, h4, h5, h6 {
 
   #sh-section-header .inner .item .feature ul li {
     font-size: 0.9rem;
+  }
+
+  .sh-experience h2, .sh-experience h3, .sh-abilities h2, .sh-experience p {
+    text-align: center;
   }
 
   .sh-desktop-only {
