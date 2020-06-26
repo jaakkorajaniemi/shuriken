@@ -19,8 +19,6 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah:wght@400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap" rel="stylesheet">
-    <link href="//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro+Ultra+Light" rel="stylesheet" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/9e00143409affcb46a1ae58634aa64be?family=Sofia+Pro" rel="stylesheet" type="text/css"/>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7f54fa9b37.js"></script>
@@ -129,21 +127,16 @@
                             <div class="feature rounded mt-5 mb-3">
                                 {% block HEADER_TEXT %}
                                 <div class="sh-mobile-only mt-4"></div>
-                                <div class="sh-desktop-only mt-3"></div>
+                                <div class="sh-desktop-only mt-2"></div>
                                 <p style="font-weight: 600">Hello, I'm</p>
-                                <h2>Jaakko <span style="color: #911">Rajaniemi</span></h2>
-                                <p>
-                                  <ul>
-                                    <li style="font-weight: 400">Startup consultant</li>
-                                    <li style="font-weight: 400">Japan market entry specialist</li>
-                                  </ul>
-                                </p>
-                                <p class="mb-0" style="font-weight: 400">Born in Helsinki, living in Tokyo.</p>
+                                <h2>Jaakko <span style="color: #911">Rajaniemi</span>,</h2>
+                                <p style="font-family: 'Sofia Pro'; font-weight: 400">a startup consultant.</p>
+                                <p class="mb-0" style="font-weight: 400">Born in <span style="color: #057; font-weight: 500">Helsinki</span>, living in <span style="color: #700; font-weight: 500">Tokyo</span>.</p>
                                 {% endblock %}
                             </div>
                             {% endif %}
                             {% block HEADER_BUTTONS %}
-                            <button class="btn btn-md btn-wine" onclick="window.location.href='/contact';">{% trans 'Request a meeting' %} &raquo;</button>
+                            <button class="btn btn-md btn-wine" onclick="window.location.href='/contact';">{% trans 'Hire me now!' %} &raquo;</button>
                             {% endblock %}
                         </div>
                     </div>
