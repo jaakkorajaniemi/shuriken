@@ -57,6 +57,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #ecc;
 }
 
+.bg-blue, .btn-blue {
+  background-color: #057;
+  color: #eee;
+}
+
+.bg-blue:hover, .btn-blue:hover {
+  color: #cce;
+}
 
 
 /* ELEMENTS */
@@ -226,7 +234,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #sh-section-header .inner .item .feature p {
-  font-family: 'Sofia Pro', sans;
   /*font-family: 'Gloria Hallelujah', Tahoma, sans-serif;*/
   color: #000;
   font-weight: 100;
@@ -289,11 +296,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #sh-section-header .inner .item .feature p {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
   }
 
   #sh-section-header .inner .item .feature ul li {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .sh-desktop-only {
