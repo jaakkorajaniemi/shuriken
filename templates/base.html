@@ -30,7 +30,7 @@
   <!-- Core css settings will determine font using body language code -->
   <body lang="{{ request.LANGUAGE_CODE }}">
     <header>
-        <nav class="sh-desktop-only navbar shadow navbar-expand-md navbar-dark fixed-top bg-dark" id="sh-nav-full">
+        <nav class="sh-desktop-only navbar shadow navbar-expand-md navbar-light fixed-top bg-light" id="sh-nav-full">
           <!-- Visual element -->
           <a class="navbar-brand" href="#">
             ■
@@ -56,24 +56,24 @@
 
           <!-- Logo and social media -->
           <a class="navbar-brand" href="https://www.facebook.com/jaakkor" target="_blank">
-            <i class="fa fa-facebook-square" style="color: #fff"></i>
+            <i class="fa fa-facebook-square" style="color: #08c"></i>
           </a>
           <a class="navbar-brand" href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank">
-            <i class="fa fa-linkedin-square" style="color: #fff"></i>
+            <i class="fa fa-linkedin-square" style="color: #00a"></i>
           </a>
-          <a class="navbar-brand" href="#"><img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a></img>
+          <a class="navbar-brand" href="#"><img src="{% static 'img/nav-logo3.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a></img>
         </nav>
 
-        <nav class="sh-mobile-only navbar shadow navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="sh-mobile-only navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
           <!-- Logo and social media -->
           <a class="navbar-brand" href="#">
-            <img src="{% static 'img/nav-logo.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a>
+            <img src="{% static 'img/nav-logo3.png' %}" width="120" height="30" class="img-responsive" alt="{% trans 'Site logo' %}"></a>
           </a>
           <a class="navbar-brand" href="https://www.facebook.com/jaakkor" target="_blank">
-            <i class="fa fa-facebook-official" style="color: #fff"></i>
+            <i class="fa fa-facebook-official" style="color: #000"></i>
           </a>
           <a class="navbar-brand mr-auto" href="https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/" target="_blank">
-            <i class="fa fa-linkedin-square" style="color: #fff"></i>
+            <i class="fa fa-linkedin-square" style="color: #000"></i>
           </a>
 
           <!-- Collapsible button -->
@@ -131,13 +131,13 @@
                                 <p class="mb-2">Hello, I'm</p>
                                 <h2 class="mb-2">Jaakko <span style="color: #911">Rajaniemi</span>,</h2>
                                 <p style="font-family: 'Sofia Pro'; font-weight: 400">a market entry consultant.</p>
-                                <p class="mb-0" style="font-family: 'Sofia Pro Light'">Born in <span style="color: #057; font-weight: 500">Helsinki</span>, living in <span style="color: #700; font-weight: 500">Tokyo</span>.<br/><span style="font-family: 'Sofia Pro Extra Light'; font-size: 0.8rem; color: #555">Passionate about startups and mountaineering.</span></p>
+                                <p class="mb-0" style="font-family: 'Sofia Pro Light'">Born in <span style="color: #057; font-weight: 500">Helsinki</span>, living in <span style="color: #700; font-weight: 500">Tokyo</span>.<br/><span style="font-family: 'Sofia Pro Extra Light'; font-size: 0.75rem; color: #555">Passionate about <span style="font-family: 'Sofia Pro Light'">startups</span> and <span style="font-family: 'Sofia Pro Light'">mountaineering</span>.</span></p>
                                 {% endblock %}
                             </div>
                             {% endif %}
                             {% block HEADER_BUTTONS %}
                             <button class="btn btn-md btn-wine mr-2" onclick="window.location.href='/contact';">{% trans 'Hire me now!' %} &raquo;</button>
-                            <button class="btn btn-md btn-blue" onclick="window.location.href='/contact';" disabled>{% trans 'Review CV' %} &raquo;</button>
+                            <button class="btn btn-md btn-blue" onclick="window.location.href='/#experience';">{% trans 'Review CV' %} &raquo;</button>
                             {% endblock %}
                         </div>
                     </div>

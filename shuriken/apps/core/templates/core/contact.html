@@ -10,14 +10,23 @@
         <div class="container sh-experience">
             <div class="row">
                 <div class="col-lg">
-                    <h2 class="featurette-heading">{% trans 'Contact form' %}</h2>
-                    <p class="light">Submitting this form will immediately dispatch an email to me, and you can also opt to get a receipt. All inquiries will be treated confidentially.</p>
+                    <h1>{% trans 'Contact Jaakko' %}</h1>
+                    <p class="light">Request a meeting or ask for details using this form. All inquiries will be treated confidentially. Moreover, business inquiries will be primarily treated in the role of my employer.</p>
                     <p>{{ form.non_field_errors }}</p>
 
 
                     <form method="post">
                         {% csrf_token %}
                         <div class="container mt-5">
+                            <div class="row my-3">
+                                <div class="col-lg-2">
+                                    <label for="{{ form.name.id_for_label }}">Your name:</label>
+                                    {{ form.name.errors }}
+                                </div>
+                                <div class="col-lg-8">
+                                    {{ form.name }}
+                                </div>
+                            </div>
                             <div class="row my-3">
                                 <div class="col-lg-2">
                                     <label for="{{ form.subject.id_for_label }}">Subject:</label>
@@ -40,6 +49,16 @@
                                 </div>
                                 <div class="col-lg-2">
                                     
+                                </div>
+                            </div>
+                            
+                            <div class="row my-3">
+                                <div class="col-lg-2">
+                                    <label for="{{ form.email.id_for_label }}">Send copy to:</label>
+                                    {{ form.email.errors }}
+                                </div>
+                                <div class="col-lg-1">
+                                    {{ form.email }}
                                 </div>
                             </div>
                             <div class="row mb-3">
