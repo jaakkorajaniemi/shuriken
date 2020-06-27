@@ -57,7 +57,9 @@
         <div class="container sh-experience">
             <div class="row">
                 <div class="col-lg">
-                    <h1>Professional experience</h1>
+                    <div class="row justify-content-between">
+                        <div class="col-md-9"><h1>Professional experience</h1></div>
+                    </div>
                     <p class="light">
                         I am a Global Innovation Consultant at <a href="https://www2.deloitte.com/jp/en/pages/about-deloitte/articles/dtvs/dtvs.html" target="_blank" rel="noopener">Deloitte Tohmatsu Venture Support</a>,
                         engaged in direct startup advisory, corporate co-creation, and
@@ -69,10 +71,10 @@
             </div>
             <hr class="sh-divider-blank">
             <div class="row">
-                <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
-                    <i class="fa fa-globe fa-3x pb-2" style="color: #000"></i>
+                <div class="col-lg-1 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
+                    <i class="fa fa-home fa-3x pb-2" style="color: #000"></i>
                 </div>
-                <div class="col-lg my-auto">
+                <div class="col-lg-7 my-auto">
                     <h2>Startups</h2>
                     <ul>
                         <li>Operational support and Japan entry PMO for an European startup with over €50 million in total investment.</li>
@@ -80,12 +82,18 @@
                         <li>Provided pitch training for a Japanese manufacturing startup planning to enter the Singaporean market.</li>
                     </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
-                    <i class="fa fa-briefcase fa-3x pb-2" style="color: #000"></i>
+                <div class="sh-desktop-only col-lg-4 my-auto" style="text-align: center">
+                    <figure class="figure my-auto">
+                        <img class="rounded" src="{% static 'img/cvspeaker01.jpg' %}" alt="{% trans 'Judging a startup pitch contest at Slush Tokyo, 2018' %}" width="120" height="120" />
+                        <figcaption class="figure-caption"><a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a>, 2018 (Japan)</figcaption>
+                    </figure>
                 </div>
-                <div class="col-lg my-auto">
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-1 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
+                    <i class="fa fa-building fa-3x pb-2" style="color: #000"></i>
+                </div>
+                <div class="col-lg-7 my-auto">
                     <h2>Large corporations</h2>
                     <ul>
                         <li>Performed business needs analysis for a corporation and listed 100 startups as collaboration candidates.</li>
@@ -93,44 +101,74 @@
                         <li>Provided hands-on negotiation support for co-innovation between a Japanese corporation and a global startup.</li>
                     </ul>
                 </div>
+                <div class="sh-desktop-only col-lg-4 my-auto" style="text-align: center">
+                    <figure class="figure my-auto">
+                        <img class="rounded" src="{% static 'img/2018_Ignite3.jpg' %}" alt="{% trans 'Judging a startup pitch contest at Slush Tokyo, 2018' %}" width="120" height="120" />
+                        <figcaption class="figure-caption"><a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a>, 2018 (Japan)</figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-lg-1 mb-4 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
+            <div class="row mt-3">
+                <div class="col-lg-1 rounded" style="text-align: center; background-color: #fff; border: 1px solid #fff">
                     <i class="fa fa-seedling fa-3x pb-2" style="color: #000"></i>
                 </div>
-                <div class="col-lg my-auto">
-                    <h2>Public sector</h2>
+                <div class="col-lg-7 my-auto">
+                    <h2>Ecosystems</h2>
                     <ul>
                         <li>Invited over 190 global startups to Japan and matched them with over 200 Japanese large corporations.</li>
                         <li>Conducted foreign startup ecosystem research in the Nordic countries and Russia for a local ministry.</li>
                         <li>Collaborated with local foreign embassies and the metropolitan government to showcase global startups.</li>
                     </ul>
                 </div>
-            </div>
-            <hr class="sh-divider-blank">
-            <div class="row">
-                <div class="col-lg-3" style="text-align: center">
+                <div class="sh-desktop-only col-lg-4 my-auto" style="text-align: center">
                     <figure class="figure my-auto">
-                        <img class="rounded" src="{% static 'img/cvspeaker01.jpg' %}" alt="{% trans 'Judging a startup pitch contest at Slush Tokyo, 2018' %}" width="200" height="200" />
-                        <figcaption class="figure-caption"><a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a>, 2018 (Japan)</figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3" style="text-align: center">
-                    <figure class="figure my-auto">
-                        <img class="rounded" src="{% static 'img/cvspeaker02.jpg' %}" alt="{% trans 'Speaking about the Japanese startup ecosystem at Ignite conference, Manila, 2018' %}" width="200" height="200" />
+                        <img class="rounded" src="{% static 'img/cvspeaker02.jpg' %}" alt="{% trans 'Speaking about the Japanese startup ecosystem at Ignite conference, Manila, 2018' %}" width="120" height="120" />
                         <figcaption class="figure-caption"><a href="https://www.ignite.ph/" target="_blank" rel="noopener">Ignite Manila</a>, 2018 (Philippines)</figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-6 my-auto">
-                    <div class="feature rounded p-3">
-                        <p class="mb-0">My mission is to make the Japanese innovation ecosystem more global and competitive. Currently, most startups and corporations struggle with the information barrier caused by gaps in cultural and linguistic understanding. As a resident of Japan, it is in my utmost interest to help realize a better society to deliver a happier life to all of us.</p>
+            </div>
+            <hr class="sh-divider-blank">
+            <div class="sh-mobile-only row mx-auto">
+                <div class="col mx-auto">
+                    <figure class="figure my-auto">
+                        <img class="rounded" src="{% static 'img/cvspeaker01.jpg' %}" alt="{% trans 'Judging a startup pitch contest at Slush Tokyo, 2018' %}" width="120" height="120" />
+                        <figcaption class="figure-caption"><a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a>, 2018 (Japan)</figcaption>
+                    </figure>
+                </div>
+                <div class="col mx-auto">
+                    <figure class="figure my-auto">
+                        <img class="rounded" src="{% static 'img/2018_Ignite3.jpg' %}" alt="{% trans 'Judging a startup pitch contest at Slush Tokyo, 2018' %}" width="120" height="120" />
+                        <figcaption class="figure-caption"><a href="https://www.slush.org/" target="_blank" rel="noopener">Slush Tokyo</a>, 2018 (Japan)</figcaption>
+                    </figure>
+                </div>
+                <div class="col mx-auto">
+                    <figure class="figure">
+                        <img class="rounded" src="{% static 'img/cvspeaker02.jpg' %}" alt="{% trans 'Speaking about the Japanese startup ecosystem at Ignite conference, Manila, 2018' %}" width="120" height="120" />
+                        <figcaption class="figure-caption"><a href="https://www.ignite.ph/" target="_blank" rel="noopener">Ignite Manila</a><br />, 2018 (Philippines)</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col bg-light rounded-lg">
+                            <span class="sh-cta-desc-title mt-1">Do the problems sound familiar?</span>
+                            <span class="sh-cta-desc mb-2">Success is difficult to ensure, but applying best practices can reduce the risk of failure. Contact me to know if I can help.</span>
+                        </div>
+                        <div class="col-xs-1 my-auto">
+                            <div class="sh-triangle-right ml-2 mr-2"></div>
+                        </div>
                     </div>
+                </div>
+                <div class="col rounded-lg my-auto">
+                    <span class="sh-cta-call mt-1 mb-1" style="text-align: center">Need help? Let's find out together how I could help!</span>
+                    <span class="sh-cta-btn mb-2"><button class="btn btn-block btn-sm btn-wine" onclick="window.location.href='/#experience';" width="100%">{% trans 'Contact me and describe your problem!' %} &raquo;</button></span>
                 </div>
             </div>
         </div>
     </div>
 
-    <hr class="sh-divider">
+    <hr class="sh-divider mt-5">
 
     <div class="row">
         <div class="container sh-experience">
@@ -169,7 +207,7 @@
         </div>
     </div>
 
-    <hr class="sh-divider">
+    <hr class="sh-divider mt-5">
 
     <div class="row">
         <div class="container sh-abilities">
@@ -181,7 +219,7 @@
             <hr class="sh-divider-blank">
             <div class="row">
                 <div class="col-lg-6 my-2">
-                    <div class="shadow rounded bg-secondary">
+                    <div class="shadow rounded bg-blue">
                         <div class="row">
                             <div class="col-lg m-3">
                                 <div style="float: left; width: 4rem"><i class="fa fa-briefcase fa-3x" style="color: #fff"></i></div>
@@ -246,7 +284,7 @@
                 </div>
 
                 <div class="col-lg-6 my-2">
-                    <div class="shadow rounded bg-secondary">
+                    <div class="shadow rounded bg-blue">
                         <div class="row">
                             <div class="col-lg m-3">
                                 <div style="float: left; width: 4rem"><i class="fa fa-database fa-3x" style="color: #fff"></i></div>
@@ -268,9 +306,36 @@
             </div>
         </div>
     </div>
-    <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+    <hr class="sh-divider">
 
+    <div class="row">
+        <div class="container sh-experience">
+            <div class="row">
+                <div class="col-lg mb-4">
+                    <h1>{% trans 'Request for information' %}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col bg-light rounded-lg">
+                            <span class="sh-cta-desc-title mt-1">Do I have that skill you were missing?</span>
+                            <span class="sh-cta-desc mb-2">Companies normally only hire people for their core operations. Sometimes you need to buy extra skills from the outside.</span>
+                        </div>
+                        <div class="col-xs-1 my-auto">
+                            <div class="sh-triangle-right ml-2 mr-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded-lg my-auto">
+                    <span class="sh-cta-call mt-1 mb-1" style="text-align: center">Need help? Let's find out together how I could help!</span>
+                    <span class="sh-cta-btn mb-2"><button class="btn btn-block btn-sm btn-wine" onclick="window.location.href='/#experience';" width="100%">{% trans 'Contact me and describe your problem!' %} &raquo;</button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="sh-divider">
 </div><!-- /.container -->
 {% endblock %}

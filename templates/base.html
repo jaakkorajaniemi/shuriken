@@ -110,10 +110,11 @@
 
                 {% block BANNER_IMG %}
                   <img class="primary" src="{% static 'img/header01.jpg' %}" class="img-responsive" alt="{% trans 'Banner image' %}">
+                  <div id="particles-js"></div>
+                  <img class="profile" src="{% static 'img/header01-profile.png' %}" class="img-responsive" alt="{% trans 'Banner image' %}">
                   <img class="overlay" src="{% static 'img/header01-overlay.png' %}">
                 {% endblock %}
 
-                <div id="particles-js-disabled"></div>
                 
                 <div class="container">
                     <div class="row">
@@ -130,8 +131,8 @@
                                 <div class="sh-desktop-only mt-2"></div>
                                 <p class="mb-2">Hello, I'm</p>
                                 <h2 class="mb-2">Jaakko <span style="color: #911">Rajaniemi</span>,</h2>
-                                <p style="font-family: 'Sofia Pro'; font-weight: 400">a market entry consultant.</p>
-                                <p class="mb-0" style="font-family: 'Sofia Pro Light'">Born in <span style="color: #057; font-weight: 500">Helsinki</span>, living in <span style="color: #700; font-weight: 500">Tokyo</span>.<br/><span style="font-family: 'Sofia Pro Extra Light'; font-size: 0.75rem; color: #555">Passionate about <span style="font-family: 'Sofia Pro Light'">startups</span> and <span style="font-family: 'Sofia Pro Light'">mountaineering</span>.</span></p>
+                                <p style="font-family: 'Sofia Pro'; font-weight: 400">a global innovation consultant.</p>
+                                <p class="mb-0" style="font-family: 'Sofia Pro Light'">Living in <span style="color: #700; font-weight: 500">Tokyo</span>, born in <span style="color: #057; font-weight: 500">Helsinki</span>.<br/><span style="font-family: 'Sofia Pro Extra Light'; font-size: 0.75rem; color: #555">Specialized in <span style="font-family: 'Sofia Pro Light'">startups</span> and <span style="font-family: 'Sofia Pro Light'">market entry</span>.</span></p>
                                 {% endblock %}
                             </div>
                             {% endif %}
@@ -180,7 +181,7 @@
             }
           },
           "color": {
-            "value": "#ddd"
+            "value": "#fff"
           },
           "shape": {
             "type": "circle",
@@ -208,7 +209,7 @@
             }
           },
           "size": {
-            "value": 2,
+            "value": 3,
             "random": true,
             "anim": {
               "enable": true,
