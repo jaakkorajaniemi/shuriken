@@ -128,15 +128,16 @@
                                 {% block HEADER_TEXT %}
                                 <div class="sh-mobile-only mt-4"></div>
                                 <div class="sh-desktop-only mt-2"></div>
-                                <p style="font-weight: 600">Hello, I'm</p>
-                                <h2>Jaakko <span style="color: #911">Rajaniemi</span>,</h2>
-                                <p style="font-family: 'Sofia Pro'; font-weight: 400">a startup consultant.</p>
-                                <p class="mb-0" style="font-weight: 400">Born in <span style="color: #057; font-weight: 500">Helsinki</span>, living in <span style="color: #700; font-weight: 500">Tokyo</span>.</p>
+                                <p class="mb-2">Hello, I'm</p>
+                                <h2 class="mb-2">Jaakko <span style="color: #911">Rajaniemi</span>,</h2>
+                                <p style="font-family: 'Sofia Pro'; font-weight: 400">a market entry consultant.</p>
+                                <p class="mb-0" style="font-family: 'Sofia Pro Light'">Born in <span style="color: #057; font-weight: 500">Helsinki</span>, living in <span style="color: #700; font-weight: 500">Tokyo</span>.<br/><span style="font-family: 'Sofia Pro Extra Light'; font-size: 0.8rem; color: #555">Passionate about startups and mountaineering.</span></p>
                                 {% endblock %}
                             </div>
                             {% endif %}
                             {% block HEADER_BUTTONS %}
-                            <button class="btn btn-md btn-wine" onclick="window.location.href='/contact';">{% trans 'Hire me now!' %} &raquo;</button>
+                            <button class="btn btn-md btn-wine mr-2" onclick="window.location.href='/contact';">{% trans 'Hire me now!' %} &raquo;</button>
+                            <button class="btn btn-md btn-blue" onclick="window.location.href='/contact';" disabled>{% trans 'Review CV' %} &raquo;</button>
                             {% endblock %}
                         </div>
                     </div>

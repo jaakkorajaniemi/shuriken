@@ -7,79 +7,51 @@
 
 {% block body %}
 <div class="container">
-    <div class="sh-desktop-only row">
-        <div class="col-lg-4 mb-3">
-            <div class="sh-warpbox shadow bg-light rounded">
-                <div class="sh-warpbox-content">
-                    <i class="fa fa-book fa-3x" style="color: #057"></i>
-                    <h4>Book</h4>
-                    <p class="pb-1">Make a deep dive into the history, structure, culture and entry mechanics of the Japanese startup ecosystem.</p>
-                </div>  
-                <div class="sh-warpbox-button">
-                    <button class="btn btn-blue" onclick="window.location.href='/contact';" role="button">{% trans 'Read' %} &raquo;</button>
+    <div class="sh-desktop-only">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <div class="sh-warpbox shadow bg-light rounded">
+                    <div class="sh-warpbox-content">
+                        <i class="fa fa-book fa-3x" style="color: #057"></i>
+                        <h4>Book</h4>
+                        <p class="pb-1">Make a deep dive into the history, structure, culture and entry mechanics of the Japanese startup ecosystem.</p>
+                    </div>  
+                    <div class="sh-warpbox-button">
+                        <button class="btn btn-blue" onclick="window.location.href='/contact';" role="button">{% trans 'Read' %} &raquo;</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 mb-3">
-            <div class="sh-warpbox shadow bg-light rounded">
-                <div class="sh-warpbox-content">
-                    <i class="fa fa-file fa-3x" style="color: #057"></i>
-                    <h4>Resources</h4>
-                    <p>Access complementary resources related to the book, including cultural frameworks and market entry models.</p>
-                </div>
-                <div class="sh-warpbox-button">
-                    <button class="btn btn-blue" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';" role="button">{% trans 'Access' %} &raquo;</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 mb-3">
-            <div class="sh-warpbox shadow bg-light rounded">
-                <div class="sh-warpbox-content">
-                    <i class="fa fa-quote-right fa-3x" style="color: #700"></i><!-- #611 for wine -->
-                    <h4>{% trans 'Blog' %}</h4>
-                    <p>My blog with insights into Japanese business will be published here once coding is done.</p>
-                </div>
-                <div class="sh-warpbox-button">
-                    <button class="btn btn-wine" role="button">{% trans 'Read' %} &raquo;</button>
+            <div class="col-lg-4 mb-3">
+                <div class="sh-warpbox shadow bg-light rounded">
+                    <div class="sh-warpbox-content">
+                        <i class="fa fa-file fa-3x" style="color: #057"></i>
+                        <h4>Resources</h4>
+                        <p>Access complementary resources related to the book, including cultural frameworks and market entry models.</p>
+                    </div>
+                    <div class="sh-warpbox-button">
+                        <button class="btn btn-blue" onclick="window.location.href='https://www.linkedin.com/in/jaakko-rajaniemi-a7a72654/';" role="button">{% trans 'Access' %} &raquo;</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="sh-mobile-only">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg mx-auto">
-                    <div class="sh-businesscard d-flex bd-highlight rounded-lg shadow" style="min-height: 200px; min-width: 430px">
-                        <div class="flex-column flex-grow-1">
-                            <div class="pt-4 pl-4 bd-highlight">
-                                <span style="font-family: 'Sofia Pro'; font-size: 1.3rem; font-weight: 500">Jaakko Rajaniemi</span><br />
-                                <span style="font-weight: 500;">Innovation Solutions Division<br />
-                                </span>
-                            </div>
-                        </div>
-                        <div class="flex-column">
-                            <div class="pt-4 pr-4 bd-highlight">
-                                <span style="font-weight: 500;">Deloitte Tohmatsu<br />
-                                Venture Support Co., Ltd.<br /></span>
-                                PCPM Building<br />
-                                1-11-1 Marunouchi<br />
-                                Chiyoda-ku, Tokyo 100-6211<br />
-                                Japan<br />
-                            </div>
-                            <div class="pb-4 pr-4 pt-4 bd-highlight">
-                                Member of<br />
-                                <span style="font-weight: 500;">
-                                    Deloitte Touche Tohmatsu Limited<br /></span>
-                            </div>
-                        </div>
+            <div class="col-lg-4 mb-3">
+                <div class="sh-warpbox shadow bg-light rounded">
+                    <div class="sh-warpbox-content">
+                        <i class="fa fa-quote-right fa-3x" style="color: #700"></i><!-- #611 for wine -->
+                        <h4>{% trans 'Blog' %}</h4>
+                        <p>My blog with insights into Japanese business will be published here once coding is done.</p>
+                    </div>
+                    <div class="sh-warpbox-button">
+                        <button class="btn btn-wine" role="button">{% trans 'Read' %} &raquo;</button>
                     </div>
                 </div>
             </div>
         </div>
+        <hr class="sh-divider">
     </div>
 
-    <hr class="sh-divider">
+    <div class="sh-mobile-only">
+    </div>
+
 
     <div class="row">
         <div class="container sh-experience">
