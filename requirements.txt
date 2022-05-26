@@ -54,7 +54,7 @@ sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
 sqlparse==0.3.1
-Twisted==20.3.0
+Twisted==22.4.0
 urllib3==1.25.9
 w3lib==1.22.0
 XlsxWriter==1.2.9
